@@ -1,7 +1,7 @@
 // ==WindhawkMod==
 // @id              modern-pill-run-dialog
 // @name            MPRD - Modern Pill Run Dialog
-// @description     Replaces the classic Windows Run dialog (Win+R) with a clean, modern floating pill bar featuring Translucent 11 Windows Acrylic blur, Minimal 11, Frosted Glass, DirectWrite typography, custom rounded corners, and polished animations.
+// @description     Replaces the classic Windows Run dialog (Win+R) with a clean, modern floating pill bar featuring MPRD Blur, MPRD Legacy, M-11 Compact, Liquid Glass, Midnight Aurora, DirectWrite typography, and polished animations.
 // @version         1.2.0
 // @author          darkostepbro
 // @github          https://github.com/darkostepbro
@@ -16,24 +16,24 @@
 ![MPRD Preview](https://raw.githubusercontent.com/darkostepbro/Windhawk-mods/main/mprd/assets/preview.png)
 
 Replaces the legacy Windows Run dialog (`Win + R`) with a sleek, floating pill
-command bar built with **DirectWrite anti-aliased typography**, **Windows 11 Acrylic HostBackdrop blur**,
+command bar built with **DirectWrite anti-aliased typography**, **live Acrylic backdrop blur**,
 clean vector icons, live Windows `RunMRU` history, inline autocomplete,
 quick Admin elevation, custom rounded corners, and fluid hover & launch polish animations.
 
 ## Themes
-1. **Translucent 11** — Seamless dark Windows 11 Acrylic frosted blur modeled after Windows 11 Settings Styler's *Translucent Seamless* (`TintLuminosityOpacity 0.4`, `TintOpacity 0.35`, subtle Acrylic micro-grain, borderless glass).
-2. **Minimal 11** — Ultra-minimalist single expandable dark command bar with outline icons (`🔍`, folder, `( > )`) and inline unified suggestions list.
-3. **Frosted Glass** — Apple-inspired translucent liquid glass capsule with bright crystalline rim reflections and a minimal right-arrow (`→`) icon-only action button.
-4. **MPRD Legacy** — Classic obsidian matte floating pill with crisp rim lighting and soft diffused shadow.
+1. **MPRD Blur** — Seamless dark Acrylic frosted blur with balanced luminosity, soft tint, and subtle micro-grain.
+2. **MPRD Legacy** — Classic obsidian matte floating pill with crisp rim lighting and soft diffused shadow.
+3. **M-11 Compact** — Ultra-minimalist single expandable dark command bar with outline icons (`🔍`, folder, `( > )`) and inline unified suggestions list.
+4. **Liquid Glass** — Translucent convex liquid glass capsule with bright crystalline top/bottom rim reflections, soft bottom internal glow, and a circular right-arrow (`→`) icon-only action button.
 5. **Midnight Aurora** — Deep smoked indigo-obsidian frosted glass with a subtle cyan-to-violet ambient rim gradient.
 
 ## Key Features
-- **DirectWrite Smooth Typography** — Razor-sharp grayscale anti-aliased rendering (defaults to **Google Sans**, with graceful fallback to Segoe UI Variable / Segoe UI).
+- **DirectWrite Smooth Typography** — Crisp grayscale anti-aliased rendering (defaults to **Google Sans**, with graceful fallback to Segoe UI Variable / Segoe UI).
 - **Custom with your Favorite Font** — Enter any installed Windows font family name in Mod Settings.
-- **Transparent Background (`10% – 100%`)** — Fine-tune background/Acrylic transparency from a dropdown.
+- **Transparent Background (`10% – 100%`)** — Fine-tune background/glass transparency from a dropdown.
 - **Rounded Window (`10% – 50%`)** — Custom border radius applied cleanly to the entire Run dialog window (minimum `10%`, never `0`).
 - **Responsive Pill Window (`WIDTHxHEIGHT`)** — Customize width and height cleanly; icons, buttons, and typography auto-scale responsively.
-- **Show Run Dialog on Taskbar & Move with Cursor** — Explicitly toggle Windows Taskbar presence and cursor dragging.
+- **Show Run Dialog on Taskbar & Move with Cursor** — Toggle Windows Taskbar presence and cursor dragging.
 - **Authentic Bottom-Left (Classic) Position** — Sits snugly above the taskbar and unfolds suggestions upward.
 - **Polished Micro-Animations** — Smooth top-to-bottom open/close glides, smooth hover transitions across all controls, gradient hover sweep on the Run button, typing glow feedback, and a luminous 360° in-place icon spin right before launching.
 
@@ -58,15 +58,15 @@ If you use a `1920x1080` display or smaller, adjust **Pill Window (px)** in Mod 
 
 Mengganti dialog Run klasik Windows (`Win + R`) menjadi *floating pill command bar*
 yang modern, bersih, dan responsif dengan **render teks DirectWrite anti-pecah**,
-**efek blur Acrylic seamless bergaya Windows 11**, pilihan desain ultra-minimalis,
+**efek blur Acrylic live**, pilihan desain ultra-minimalis & liquid glass,
 sinkronisasi riwayat `RunMRU` Windows, autocomplete instan, mode Admin 1-klik,
 custom rounded window, dan animasi polish yang halus.
 
 ## Pilihan Tema
-1. **Translucent 11** — Efek blur Acrylic gelap seamless bergaya *Translucent Seamless* di Windows 11 Settings Styler (`TintLuminosityOpacity 0.4`, `TintOpacity 0.35`, grain Acrylic halus, kaca tanpa sekat kasar).
-2. **Minimal 11** — UI super minimalis dengan satu window menyatu, icon outline bersih (`🔍`, folder, `( > )`), dan daftar saran terintegrasi di dalam kotak yang sama.
-3. **Frosted Glass** — Kapsul liquid glass transparan dengan pantulan rim kaca terang dan tombol eksekusi hanya berupa icon panah kanan (`→`) tanpa label teks.
-4. **MPRD Legacy** — Permukaan gelap obsidian matte klasik dengan rim highlight tipis dan bayangan lembut.
+1. **MPRD Blur** — Efek blur Acrylic gelap seamless dengan luminosity seimbang, tint halus, dan micro-grain tipis.
+2. **MPRD Legacy** — Permukaan gelap obsidian matte klasik dengan rim highlight tipis dan bayangan lembut.
+3. **M-11 Compact** — UI super minimalis dengan satu window menyatu, icon outline bersih (`🔍`, folder, `( > )`), dan daftar saran terintegrasi di dalam kotak yang sama.
+4. **Liquid Glass** — Kapsul liquid glass transparan dengan pantulan rim kaca putih kristal terang di atas/bawah, pendar cahaya lembut di tepi bawah, dan tombol lingkaran icon panah kanan (`→`) tanpa label teks.
 5. **Midnight Aurora** — Kaca gelap indigo-obsidian dengan aksen gradasi rim tipis cyan ke violet.
 
 ## Fitur Utama
@@ -102,14 +102,14 @@ Created & maintained by **[darkostepbro](https://github.com/darkostepbro)** (`gi
 
 // ==WindhawkModSettings==
 /*
-- theme: "translucent11"
+- theme: "mprdBlur"
   $name: "Theme"
   $description: "Choose the visual theme for MPRD - Modern Pill Run Dialog."
   $options:
-    - "translucent11": "Translucent 11"
-    - "minimal11": "Minimal 11"
-    - "frostedGlass": "Frosted Glass"
+    - "mprdBlur": "MPRD Blur"
     - "mprdLegacy": "MPRD Legacy"
+    - "m11Compact": "M-11 Compact"
+    - "liquidGlass": "Liquid Glass"
     - "midnightAurora": "Midnight Aurora"
 - transparentBackground: "50"
   $name: "Transparent Background"
@@ -127,7 +127,7 @@ Created & maintained by **[darkostepbro](https://github.com/darkostepbro)** (`gi
     - "100": "100%"
 - roundedWindow: 34
   $name: "Rounded Window (%)"
-  $description: "Custom border radius for the entire Run dialog window (10 to 50; minimum 10% so corners are never 0). Example: 14 = Minimal rounded, 34 = Smooth pill, 50 = Full capsule."
+  $description: "Custom border radius for the entire Run dialog window (10 to 50; minimum 10% so corners are never 0). Example: 14 = Compact rounded, 34 = Smooth pill, 50 = Full capsule."
 - position: "centerTop"
   $name: "Dialog Position"
   $description: "Where the floating pill appears on the active monitor."
@@ -149,7 +149,7 @@ Created & maintained by **[darkostepbro](https://github.com/darkostepbro)** (`gi
   $description: "Allow dragging the floating pill anywhere on screen with your mouse cursor."
 - showStatusTab: true
   $name: "Show Top-Left Status Tab"
-  $description: "Shows the attached top-left tab (acts as a one-click Admin toggle; hidden automatically in Minimal 11 theme)."
+  $description: "Shows the attached top-left tab (acts as a one-click Admin toggle; hidden automatically in M-11 Compact)."
 - showHistoryDropdown: true
   $name: "Show History & Suggestions"
   $description: "Displays recent RunMRU history and quick command suggestions."
@@ -189,14 +189,12 @@ using std::min;
 
 namespace {
 
-// ============================================================================
-// Settings & Theme Types
-// ============================================================================
+// Settings
 enum class ThemeMode {
-    Translucent11 = 0,
-    Minimal11 = 1,
-    FrostedGlass = 2,
-    MprdLegacy = 3,
+    MprdBlur = 0,
+    MprdLegacy = 1,
+    M11Compact = 2,
+    LiquidGlass = 3,
     MidnightAurora = 4,
 };
 
@@ -207,9 +205,9 @@ enum class DialogPosition {
 };
 
 struct ModSettings {
-    ThemeMode theme = ThemeMode::Translucent11;
-    int transparentBackground = 50; // 10..100 (%)
-    int roundedWindow = 34;         // 10..50 (% of pill height, minimum strictly 10%)
+    ThemeMode theme = ThemeMode::MprdBlur;
+    int transparentBackground = 50;
+    int roundedWindow = 34;
     DialogPosition position = DialogPosition::CenterTop;
     int pillWidth = 620;
     int pillHeight = 64;
@@ -275,16 +273,18 @@ void LoadSettings() {
 
     PCWSTR themeStr = Wh_GetStringSetting(L"theme");
     if (themeStr) {
-        if (wcscmp(themeStr, L"minimal11") == 0) {
-            s.theme = ThemeMode::Minimal11;
-        } else if (wcscmp(themeStr, L"frostedGlass") == 0 || wcscmp(themeStr, L"frostedLight") == 0) {
-            s.theme = ThemeMode::FrostedGlass;
-        } else if (wcscmp(themeStr, L"mprdLegacy") == 0) {
+        if (wcscmp(themeStr, L"mprdLegacy") == 0) {
             s.theme = ThemeMode::MprdLegacy;
+        } else if (wcscmp(themeStr, L"m11Compact") == 0 || wcscmp(themeStr, L"minimal11") == 0) {
+            s.theme = ThemeMode::M11Compact;
+        } else if (wcscmp(themeStr, L"liquidGlass") == 0 ||
+                   wcscmp(themeStr, L"frostedGlass") == 0 ||
+                   wcscmp(themeStr, L"frostedLight") == 0) {
+            s.theme = ThemeMode::LiquidGlass;
         } else if (wcscmp(themeStr, L"midnightAurora") == 0) {
             s.theme = ThemeMode::MidnightAurora;
         } else {
-            s.theme = ThemeMode::Translucent11;
+            s.theme = ThemeMode::MprdBlur;
         }
         Wh_FreeStringSetting(themeStr);
     }
@@ -299,7 +299,7 @@ void LoadSettings() {
     }
 
     int rw = Wh_GetIntSetting(L"roundedWindow");
-    if (rw < 10) rw = 10; // Strictly enforce minimum 10% (cannot be 0)
+    if (rw < 10) rw = 10;
     if (rw > 50) rw = 50;
     s.roundedWindow = rw;
 
@@ -346,9 +346,7 @@ ModSettings GetSettingsSnapshot() {
     return g_settings;
 }
 
-// ============================================================================
-// String, RunMRU & Built-In Commands with Descriptions
-// ============================================================================
+// RunMRU & Built-in Commands
 std::wstring ToLowerW(const std::wstring& str) {
     std::wstring res = str;
     for (wchar_t& c : res) {
@@ -527,9 +525,7 @@ void SaveToRunMRU(const std::wstring& command) {
     RegCloseKey(hKey);
 }
 
-// ============================================================================
-// Command Execution (Matches Native Windows Run Semantics)
-// ============================================================================
+// Command Execution
 bool ExecuteRunCommand(const std::wstring& rawInput,
                        const std::wstring& workingDir,
                        bool runAsAdmin,
@@ -609,9 +605,7 @@ bool ExecuteRunCommand(const std::wstring& rawInput,
     return false;
 }
 
-// ============================================================================
-// Windows 11 Acrylic HostBackdrop Blur Shader (Matches Translucent Seamless!)
-// ============================================================================
+// Backdrop Blur & Acrylic Shader
 void BoxBlurHorizontal(const uint32_t* src, uint32_t* dst, int w, int h, int r) {
     if (r <= 0) {
         memcpy(dst, src, static_cast<size_t>(w) * h * sizeof(uint32_t));
@@ -684,14 +678,9 @@ void BoxBlurVertical(const uint32_t* src, uint32_t* dst, int w, int h, int r) {
     }
 }
 
-// Applies authentic Windows 11 AcrylicBrush pipeline:
-//   1. 3-pass Gaussian-approx HostBackdrop blur (crisp visible frost, never muddy soup!)
-//   2. Saturation vibrancy + Luminosity compression (TintLuminosityOpacity = 0.40)
-//   3. Tint blend (TintOpacity = 0.35 baseline, scaled by Transparent Background %)
-//   4. Subtle deterministic Acrylic micro-grain noise
-void ApplyWindows11AcrylicShader(std::vector<uint32_t>& pixels,
-                                 int w, int h, int radius,
-                                 ThemeMode theme, int transparentBgPercent) {
+void ApplyAcrylicShader(std::vector<uint32_t>& pixels,
+                        int w, int h, int radius,
+                        ThemeMode theme, int transparentBgPercent) {
     if (w <= 0 || h <= 0 || pixels.size() < static_cast<size_t>(w) * h) return;
 
     std::vector<uint32_t> temp(static_cast<size_t>(w) * h);
@@ -701,37 +690,33 @@ void ApplyWindows11AcrylicShader(std::vector<uint32_t>& pixels,
         BoxBlurVertical(temp.data(), pixels.data(), w, h, r);
     }
 
-    // transparentBgPercent: 10..100 (higher = clearer glass, lower = deeper tint)
     const float transp = static_cast<float>(transparentBgPercent) / 100.0f;
-    const float tintStrength = 1.0f - transp; // 0.90 at 10% -> 0.50 at 50% -> 0.00 at 100%
+    const float tintStrength = 1.0f - transp;
 
     float tintR = 22.0f, tintG = 24.0f, tintB = 28.0f;
-    float tintOpacity = 0.35f;
-    float lumOpacity = 0.40f;
+    float tintOpacity = 0.13f;
+    float lumOpacity = 0.13f;
     float satBoost = 1.18f;
-    float noiseAmp = 3.2f;
+    float noiseAmp = 2.0f;
 
-    if (theme == ThemeMode::Translucent11) {
-        // Matches Windows 11 Settings Styler "Translucent Seamless" (Dark):
-        // TintLuminosityOpacity ~ 0.40, TintOpacity ~ 0.35 at 50% default!
+    if (theme == ThemeMode::MprdBlur) {
         tintR = 22.0f; tintG = 23.0f; tintB = 26.0f;
-        tintOpacity = 0.08f + tintStrength * 0.56f; // 0.36 at 50%
-        lumOpacity = 0.14f + tintStrength * 0.48f;  // 0.38 at 50%
+        tintOpacity = 0.08f + tintStrength * 0.10f;
+        lumOpacity = 0.05f + tintStrength * 0.15f;
         satBoost = 1.18f;
-        noiseAmp = 3.4f;
-    } else if (theme == ThemeMode::FrostedGlass) {
-        // Apple Liquid Glass (cool translucent smoky-crystal frost, Photo 4)
-        tintR = 165.0f; tintG = 186.0f; tintB = 200.0f;
-        tintOpacity = 0.08f + tintStrength * 0.34f; // ~0.25 at 50%
-        lumOpacity = 0.10f + tintStrength * 0.22f;
-        satBoost = 1.24f;
-        noiseAmp = 2.6f;
+        noiseAmp = 2.0f;
+    } else if (theme == ThemeMode::LiquidGlass) {
+        tintR = 186.0f; tintG = 198.0f; tintB = 206.0f;
+        tintOpacity = 0.04f + tintStrength * 0.22f;
+        lumOpacity = 0.06f + tintStrength * 0.14f;
+        satBoost = 1.22f;
+        noiseAmp = 1.6f;
     } else if (theme == ThemeMode::MidnightAurora) {
         tintR = 20.0f; tintG = 22.0f; tintB = 42.0f;
         tintOpacity = 0.12f + tintStrength * 0.54f;
         lumOpacity = 0.16f + tintStrength * 0.44f;
         satBoost = 1.22f;
-        noiseAmp = 3.0f;
+        noiseAmp = 2.0f;
     }
 
     for (int y = 0; y < h; ++y) {
@@ -742,26 +727,26 @@ void ApplyWindows11AcrylicShader(std::vector<uint32_t>& pixels,
             float gC = static_cast<float>((px >> 8) & 0xFF);
             float bC = static_cast<float>(px & 0xFF);
 
-            // 1. Vibrancy boost so blurred colors behind glass stay rich
+            // Vibrancy
             float lum = 0.299f * rC + 0.587f * gC + 0.114f * bC;
             rC = (max)(0.0f, (min)(255.0f, lum + (rC - lum) * satBoost));
             gC = (max)(0.0f, (min)(255.0f, lum + (gC - lum) * satBoost));
             bC = (max)(0.0f, (min)(255.0f, lum + (bC - lum) * satBoost));
 
-            // 2. Luminosity blend (keeps bright elements subtly glowing while lifting pure black)
-            float targetLum = (theme == ThemeMode::FrostedGlass) ? 132.0f : 30.0f;
+            // Luminosity blend
+            float targetLum = (theme == ThemeMode::LiquidGlass) ? 142.0f : 30.0f;
             float blendedLum = lum * (1.0f - lumOpacity) + targetLum * lumOpacity;
             float lumDelta = blendedLum - lum;
             rC = (max)(0.0f, (min)(255.0f, rC + lumDelta * 0.65f));
             gC = (max)(0.0f, (min)(255.0f, gC + lumDelta * 0.65f));
             bC = (max)(0.0f, (min)(255.0f, bC + lumDelta * 0.65f));
 
-            // 3. Acrylic TintColor blend
+            // Tint blend
             rC = rC * (1.0f - tintOpacity) + tintR * tintOpacity;
             gC = gC * (1.0f - tintOpacity) + tintG * tintOpacity;
             bC = bC * (1.0f - tintOpacity) + tintB * tintOpacity;
 
-            // 4. Fine Acrylic frosted micro-grain (deterministic hash)
+            // Micro-grain
             uint32_t hash = static_cast<uint32_t>(x * 374761393u + y * 668265263u);
             hash = (hash ^ (hash >> 13)) * 1274126177u;
             float grain = (static_cast<float>((hash >> 24) & 0xFF) / 127.5f - 1.0f) * noiseAmp;
@@ -775,9 +760,7 @@ void ApplyWindows11AcrylicShader(std::vector<uint32_t>& pixels,
     }
 }
 
-// ============================================================================
-// Color Interpolation & GDI+ Vector Icons
-// ============================================================================
+// Color & Vector Icons
 Gdiplus::Color LerpColor(Gdiplus::Color a, Gdiplus::Color b, float t) {
     t = (max)(0.0f, (min)(1.0f, t));
     auto lerpB = [&](BYTE x, BYTE y) -> BYTE {
@@ -910,24 +893,22 @@ void DrawFilledPlayIcon(Gdiplus::Graphics& g, float cx, float cy, float size, Gd
     g.DrawPolygon(&roundPen, pts, 3);
 }
 
-// Clean Right Arrow '->' for Frosted Glass icon-only button
 void DrawRightArrowIcon(Gdiplus::Graphics& g, float cx, float cy, float size, Gdiplus::Color color) {
-    float half = size * 0.48f;
-    Gdiplus::Pen pen(color, (max)(1.7f, size * 0.135f));
+    float half = size * 0.46f;
+    Gdiplus::Pen pen(color, (max)(1.75f, size * 0.14f));
     pen.SetStartCap(Gdiplus::LineCapRound);
     pen.SetEndCap(Gdiplus::LineCapRound);
     pen.SetLineJoin(Gdiplus::LineJoinRound);
 
-    g.DrawLine(&pen, cx - half, cy, cx + half * 0.85f, cy);
+    g.DrawLine(&pen, cx - half, cy, cx + half * 0.86f, cy);
     Gdiplus::PointF head[3] = {
-        {cx + half * 0.12f, cy - half * 0.68f},
+        {cx + half * 0.14f, cy - half * 0.68f},
         {cx + half * 0.90f, cy},
-        {cx + half * 0.12f, cy + half * 0.68f},
+        {cx + half * 0.14f, cy + half * 0.68f},
     };
     g.DrawLines(&pen, head, 3);
 }
 
-// Minimal 11 Outline Search Icon (matches Figma reference)
 void DrawOutlineSearchIcon(Gdiplus::Graphics& g, float cx, float cy, float size, Gdiplus::Color color) {
     float r = size * 0.34f;
     float gx = cx - size * 0.08f;
@@ -939,7 +920,6 @@ void DrawOutlineSearchIcon(Gdiplus::Graphics& g, float cx, float cy, float size,
     g.DrawLine(&pen, gx + r * 0.72f, gy + r * 0.72f, cx + size * 0.44f, cy + size * 0.44f);
 }
 
-// Minimal 11 Outline Folder Icon (matches Figma reference)
 void DrawOutlineFolderIcon(Gdiplus::Graphics& g, float cx, float cy, float size, Gdiplus::Color color) {
     float w = size;
     float h = size * 0.78f;
@@ -963,7 +943,6 @@ void DrawOutlineFolderIcon(Gdiplus::Graphics& g, float cx, float cy, float size,
     g.DrawLine(&pen, x + w * 0.38f, y + h * 0.62f, x + w * 0.62f, y + h * 0.62f);
 }
 
-// Minimal 11 Circle Chevron Right '( > )' (matches Figma reference)
 void DrawCircleChevronRightIcon(Gdiplus::Graphics& g, float cx, float cy, float size, Gdiplus::Color color) {
     float r = size * 0.46f;
     Gdiplus::Pen pen(color, (max)(1.35f, size * 0.08f));
@@ -980,7 +959,6 @@ void DrawCircleChevronRightIcon(Gdiplus::Graphics& g, float cx, float cy, float 
     g.DrawLines(&pen, chev, 3);
 }
 
-// Minimal 11 Bent Return Arrow '↳' (matches Figma reference)
 void DrawReturnSubArrowIcon(Gdiplus::Graphics& g, float cx, float cy, float size, Gdiplus::Color color) {
     float s = size * 0.44f;
     Gdiplus::Pen pen(color, (max)(1.3f, size * 0.095f));
@@ -1063,6 +1041,70 @@ void DrawCornerBrackets(Gdiplus::Graphics& g, float x, float y, float size, floa
     g.DrawArc(&pen, x, y + size - d, d, d, 90.0f, 90.0f);
 }
 
+// Liquid Glass Optical Bezel Helper
+void DrawLiquidGlassOverlay(Gdiplus::Graphics& g,
+                            const Gdiplus::GraphicsPath& outerPath,
+                            const Gdiplus::RectF& bounds,
+                            float radius,
+                            float opacityMult,
+                            float hoverBoost,
+                            float scale) {
+    Gdiplus::PointF ptTop(bounds.X, bounds.Y - 1.0f);
+    Gdiplus::PointF ptBot(bounds.X, bounds.GetBottom() + 1.0f);
+
+    // Convex internal caustics + milky bottom light bounce
+    Gdiplus::Color bodyCols[5] = {
+        Gdiplus::Color(static_cast<BYTE>((min)(255.0f, (66.0f + 32.0f * hoverBoost) * opacityMult)), 255, 255, 255),
+        Gdiplus::Color(static_cast<BYTE>((min)(255.0f, (14.0f + 18.0f * hoverBoost) * opacityMult)), 255, 255, 255),
+        Gdiplus::Color(static_cast<BYTE>(14.0f * opacityMult), 16, 26, 32),
+        Gdiplus::Color(static_cast<BYTE>((min)(255.0f, (24.0f + 20.0f * hoverBoost) * opacityMult)), 255, 255, 255),
+        Gdiplus::Color(static_cast<BYTE>((min)(255.0f, (118.0f + 38.0f * hoverBoost) * opacityMult)), 255, 255, 255),
+    };
+    Gdiplus::REAL bodyPos[5] = {0.0f, 0.16f, 0.52f, 0.80f, 1.0f};
+    Gdiplus::LinearGradientBrush bodyGrad(ptTop, ptBot, bodyCols[0], bodyCols[4]);
+    bodyGrad.SetWrapMode(Gdiplus::WrapModeTileFlipXY);
+    bodyGrad.SetInterpolationColors(bodyCols, bodyPos, 5);
+    g.FillPath(&bodyGrad, &outerPath);
+
+    // Inner glass thickness glow
+    float inset = 1.6f * scale;
+    if (bounds.Width > inset * 4.0f && bounds.Height > inset * 4.0f) {
+        Gdiplus::GraphicsPath innerPath;
+        AddUniformRoundRect(innerPath,
+                            bounds.X + inset, bounds.Y + inset,
+                            bounds.Width - inset * 2.0f, bounds.Height - inset * 2.0f,
+                            (max)(2.0f, radius - inset));
+        Gdiplus::Color inCols[3] = {
+            Gdiplus::Color(static_cast<BYTE>(64.0f * opacityMult), 255, 255, 255),
+            Gdiplus::Color(static_cast<BYTE>(6.0f * opacityMult), 255, 255, 255),
+            Gdiplus::Color(static_cast<BYTE>(96.0f * opacityMult), 255, 255, 255),
+        };
+        Gdiplus::REAL inPos[3] = {0.0f, 0.48f, 1.0f};
+        Gdiplus::LinearGradientBrush inGrad(ptTop, ptBot, inCols[0], inCols[2]);
+        inGrad.SetWrapMode(Gdiplus::WrapModeTileFlipXY);
+        inGrad.SetInterpolationColors(inCols, inPos, 3);
+        Gdiplus::Pen inPen(&inGrad, 2.2f * scale);
+        g.DrawPath(&inPen, &innerPath);
+    }
+
+    // Outer dark refractive edge
+    Gdiplus::Pen darkEdge(Gdiplus::Color(static_cast<BYTE>(86.0f * opacityMult), 0, 0, 0), 1.65f * scale);
+    g.DrawPath(&darkEdge, &outerPath);
+
+    // Bright specular top & bottom crystal rim
+    Gdiplus::Color rimCols[3] = {
+        Gdiplus::Color(static_cast<BYTE>((min)(255.0f, (232.0f + 23.0f * hoverBoost) * opacityMult)), 255, 255, 255),
+        Gdiplus::Color(static_cast<BYTE>(34.0f * opacityMult), 255, 255, 255),
+        Gdiplus::Color(static_cast<BYTE>((min)(255.0f, (242.0f + 13.0f * hoverBoost) * opacityMult)), 255, 255, 255),
+    };
+    Gdiplus::REAL rimPos[3] = {0.0f, 0.50f, 1.0f};
+    Gdiplus::LinearGradientBrush rimGrad(ptTop, ptBot, rimCols[0], rimCols[2]);
+    rimGrad.SetWrapMode(Gdiplus::WrapModeTileFlipXY);
+    rimGrad.SetInterpolationColors(rimCols, rimPos, 3);
+    Gdiplus::Pen rimPen(&rimGrad, 1.3f * scale);
+    g.DrawPath(&rimPen, &outerPath);
+}
+
 HICON CreateTaskbarAppIcon() {
     Gdiplus::Bitmap bmp(32, 32, PixelFormat32bppARGB);
     Gdiplus::Graphics g(&bmp);
@@ -1097,9 +1139,7 @@ void SafeRelease(T*& ptr) {
     }
 }
 
-// ============================================================================
-// MPRD - Modern Pill Run Dialog Window Class
-// ============================================================================
+// Run Dialog Window
 constexpr UINT_PTR kTimerCaret = 1;
 constexpr UINT_PTR kTimerAnim = 2;
 constexpr UINT_PTR kTimerErrorClear = 3;
@@ -1249,7 +1289,6 @@ private:
     std::wstring m_workingDir;
     ModSettings m_settings;
 
-    // Direct2D & DirectWrite
     ID2D1Factory* m_d2dFactory = nullptr;
     ID2D1DCRenderTarget* m_d2dTarget = nullptr;
     IDWriteFactory* m_dwriteFactory = nullptr;
@@ -1260,20 +1299,17 @@ private:
     IDWriteTextFormat* m_fmtBadge = nullptr;
     std::wstring m_resolvedFontName = L"Segoe UI";
 
-    // Active monitor snapshot for real-time live Acrylic blur
     RECT m_monRect = {};
     std::vector<uint32_t> m_monPixels;
     int m_monW = 0;
     int m_monH = 0;
 
-    // Current blurred region matching window coordinates
     std::vector<uint32_t> m_blurredPixels;
     int m_blurW = 0;
     int m_blurH = 0;
     int m_lastBlurX = -999999;
     int m_lastBlurY = -999999;
 
-    // DPI & Responsive Geometry
     float m_scale = 1.0f;
     float m_hRatio = 1.0f;
     int m_winX = 0;
@@ -1302,7 +1338,6 @@ private:
     Gdiplus::RectF m_closeRect;
     Gdiplus::RectF m_dropdownRect;
 
-    // Text editor state
     std::wstring m_text;
     size_t m_caret = 0;
     size_t m_selAnchor = 0;
@@ -1313,7 +1348,6 @@ private:
     POINT m_dragStartCursor = {};
     POINT m_dragStartWin = {};
 
-    // Mode & feedback
     bool m_adminMode = false;
     std::wstring m_errorMsg;
     bool m_dropdownOpen = false;
@@ -1323,12 +1357,10 @@ private:
     bool m_mouseTracked = false;
     bool m_browseDialogOpen = false;
 
-    // Suggestions
     std::vector<std::wstring> m_history;
     std::vector<SuggestionItem> m_suggestions;
     std::wstring m_ghostSuffix;
 
-    // Animation & Smooth Hover Transitions
     AnimState m_animState = AnimState::Idle;
     float m_openProgress = 1.0f;
     float m_dropProgress = 0.0f;
@@ -1349,7 +1381,6 @@ private:
     ULONGLONG m_lastAnimTick = 0;
     bool m_animTimerActive = false;
 
-    // Backbuffer DIB (32-bit premultiplied ARGB)
     HDC m_memDC = nullptr;
     HBITMAP m_dibBmp = nullptr;
     HGDIOBJ m_oldBmp = nullptr;
@@ -1357,18 +1388,17 @@ private:
     int m_dibW = 0;
     int m_dibH = 0;
 
-    bool IsMinimal11() const { return m_settings.theme == ThemeMode::Minimal11; }
-    bool IsFrostedGlass() const { return m_settings.theme == ThemeMode::FrostedGlass; }
+    bool IsCompact() const { return m_settings.theme == ThemeMode::M11Compact; }
+    bool IsLiquidGlass() const { return m_settings.theme == ThemeMode::LiquidGlass; }
     bool UsesBlurBackdrop() const {
-        return m_settings.theme == ThemeMode::Translucent11 ||
-               m_settings.theme == ThemeMode::FrostedGlass ||
+        return m_settings.theme == ThemeMode::MprdBlur ||
+               m_settings.theme == ThemeMode::LiquidGlass ||
                m_settings.theme == ThemeMode::MidnightAurora;
     }
     bool ShowsStatusTab() const {
-        return m_settings.showStatusTab && !IsMinimal11();
+        return m_settings.showStatusTab && !IsCompact();
     }
 
-    // Custom Rounded Window radius (strictly 10%..50% of pill height, never 0)
     float GetWindowCornerRadius(float refHeight) const {
         float pct = static_cast<float>((max)(10, (min)(50, m_settings.roundedWindow))) / 100.0f;
         return refHeight * pct;
@@ -1416,9 +1446,7 @@ private:
         }
     }
 
-    // ========================================================================
-    // Direct2D & DirectWrite Initialization
-    // ========================================================================
+    // Direct2D & DirectWrite
     void InitDirect2DAndFonts() {
         CleanupDirect2D();
 
@@ -1506,8 +1534,8 @@ private:
                                  DWRITE_TEXT_ALIGNMENT_LEADING, DWRITE_PARAGRAPH_ALIGNMENT_CENTER, false);
         m_fmtRow = makeFormat(13.5f, DWRITE_FONT_WEIGHT_NORMAL,
                               DWRITE_TEXT_ALIGNMENT_LEADING, DWRITE_PARAGRAPH_ALIGNMENT_CENTER, true);
-        m_fmtBadge = makeFormat(IsMinimal11() ? 12.0f : 11.0f,
-                                IsMinimal11() ? DWRITE_FONT_WEIGHT_NORMAL : DWRITE_FONT_WEIGHT_MEDIUM,
+        m_fmtBadge = makeFormat(IsCompact() ? 12.0f : 11.0f,
+                                IsCompact() ? DWRITE_FONT_WEIGHT_NORMAL : DWRITE_FONT_WEIGHT_MEDIUM,
                                 DWRITE_TEXT_ALIGNMENT_TRAILING, DWRITE_PARAGRAPH_ALIGNMENT_CENTER, true);
     }
 
@@ -1568,9 +1596,7 @@ private:
         StartAnimTimer();
     }
 
-    // ========================================================================
-    // Monitor & Responsive Layout
-    // ========================================================================
+    // Monitor & Layout
     void ComputeMonitorAndScale() {
         POINT pt = {};
         GetCursorPos(&pt);
@@ -1605,9 +1631,8 @@ private:
         float minSafeW = (min)(maxSafeW, 380.0f * m_scale);
         m_pillW = (max)(minSafeW, (min)(maxSafeW, desiredW));
 
-        // Minimal 11 defaults slightly sleeker/slimmer while respecting Pill Window height
         float rawH = static_cast<float>(m_settings.pillHeight);
-        if (IsMinimal11() && rawH > 58.0f) rawH = (max)(52.0f, rawH * 0.88f);
+        if (IsCompact() && rawH > 58.0f) rawH = (max)(52.0f, rawH * 0.88f);
         float desiredH = rawH * m_scale;
         float maxSafeH = static_cast<float>(waH) * 0.14f;
         m_pillH = (max)(46.0f * m_scale, (min)((max)(56.0f * m_scale, maxSafeH), desiredH));
@@ -1619,9 +1644,9 @@ private:
         m_padTop = 18.0f * m_scale;
         m_padBottom = 26.0f * m_scale;
         m_tabH = ShowsStatusTab() ? (25.0f * rScale) : 0.0f;
-        m_dropGap = IsMinimal11() ? 0.0f : (8.0f * m_scale);
+        m_dropGap = IsCompact() ? 0.0f : (8.0f * m_scale);
         m_dropRowH = 36.0f * rScale;
-        m_dropPadY = IsMinimal11() ? (10.0f * rScale) : (7.0f * rScale);
+        m_dropPadY = IsCompact() ? (10.0f * rScale) : (7.0f * rScale);
 
         const int maxItems = m_settings.showHistoryDropdown ? 5 : 0;
         m_maxDropReserve = maxItems > 0 ? (m_dropGap + m_dropPadY * 2.0f + m_dropRowH * maxItems) : 0.0f;
@@ -1663,7 +1688,6 @@ private:
 
         float rScale = m_scale * (max)(0.80f, (min)(1.22f, m_hRatio));
 
-        // Top-left status tab (hidden in Minimal 11 for pure minimal silhouette)
         if (ShowsStatusTab()) {
             float tabW = m_adminMode ? (184.0f * rScale) : (150.0f * rScale);
             if (m_animState == AnimState::Executing || m_animState == AnimState::LaunchPending || m_animState == AnimState::Launching) {
@@ -1680,15 +1704,14 @@ private:
 
         float sidePad = (max)(12.0f * m_scale, m_pillH * 0.22f);
 
-        if (IsMinimal11()) {
-            // Minimal 11 (Figma SEROJA-LABS): [Search] [Input] [Folder] [(>)] — zero extra chrome
+        if (IsCompact()) {
             float iconHit = m_pillH * 0.56f;
             m_badgeRect = Gdiplus::RectF(
                 pillX + sidePad,
                 pillY + (m_pillH - iconHit) * 0.5f,
                 iconHit, iconHit);
 
-            m_closeRect = Gdiplus::RectF(0, 0, 0, 0); // Minimal 11 uses Esc / click-outside
+            m_closeRect = Gdiplus::RectF(0, 0, 0, 0);
 
             float ctrlGap = 6.0f * rScale;
             m_runBtnRect = Gdiplus::RectF(
@@ -1709,7 +1732,6 @@ private:
                 (max)(56.0f * m_scale, inputRight - inputLeft),
                 m_pillH * 0.72f);
         } else {
-            // Translucent 11 / Frosted Glass / MPRD Legacy / Midnight Aurora
             float badgeSize = m_pillH * 0.625f;
             m_badgeRect = Gdiplus::RectF(
                 pillX + sidePad,
@@ -1724,9 +1746,9 @@ private:
 
             float runH = m_pillH * 0.60f;
             float runW = 0.0f;
-            if (IsFrostedGlass()) {
-                // Frosted Glass: Icon-only right-arrow liquid-glass capsule button (NO "Run" label!)
-                runW = runH * 1.32f;
+            if (IsLiquidGlass()) {
+                // Circular icon-only Liquid Glass button
+                runW = runH;
             } else {
                 std::wstring btnLabel = m_adminMode ? L"Run Admin" : L"Run";
                 float labelW = MeasureDirectWriteWidth(btnLabel, btnLabel.size(), m_fmtButton);
@@ -1757,19 +1779,17 @@ private:
                 m_pillH * 0.72f);
         }
 
-        // Dropdown rect
         int visibleCount = GetVisibleSuggestionCount();
         bool showDrop = m_settings.showHistoryDropdown && visibleCount > 0 &&
                         (m_dropdownOpen || m_dropProgress > 0.01f);
         if (showDrop) {
             float dh = m_dropPadY * 2.0f + visibleCount * m_dropRowH;
             float dropEase = 1.0f - std::pow(1.0f - m_dropProgress, 3.0f);
-            float animShift = (m_settings.enableAnimation && !IsMinimal11())
+            float animShift = (m_settings.enableAnimation && !IsCompact())
                 ? ((1.0f - dropEase) * 10.0f * m_scale)
                 : 0.0f;
 
-            if (IsMinimal11()) {
-                // Unified expandable card seamlessly attached to m_pillRect
+            if (IsCompact()) {
                 float curH = dh * dropEase;
                 if (m_dropUpward) {
                     m_dropdownRect = Gdiplus::RectF(pillX, pillY - curH, m_pillW, curH);
@@ -1791,9 +1811,7 @@ private:
         return static_cast<int>((min)(static_cast<size_t>(5), m_suggestions.size()));
     }
 
-    // ========================================================================
-    // Full-Monitor Snapshot + Live Region Acrylic Blur (60fps Zero-Flash!)
-    // ========================================================================
+    // Backdrop Capture
     void CaptureMonitorSnapshotIfNeeded() {
         m_monPixels.clear();
         m_monW = 0;
@@ -1849,8 +1867,7 @@ private:
         m_blurW = m_canvasW;
         m_blurH = m_canvasH;
 
-        // Crisp, clearly visible Windows 11 Acrylic frost radius (sigma ~8px)
-        const int blurRadius = (max)(4, static_cast<int>(std::round(8.0f * m_scale)));
+        const int blurRadius = (max)(4, static_cast<int>(std::round(15.0f * m_scale)));
         const int pad = blurRadius * 2;
         const int pw = m_canvasW + pad * 2;
         const int ph = m_canvasH + pad * 2;
@@ -1869,10 +1886,9 @@ private:
             }
         }
 
-        ApplyWindows11AcrylicShader(padded, pw, ph, blurRadius,
-                                    m_settings.theme, m_settings.transparentBackground);
+        ApplyAcrylicShader(padded, pw, ph, blurRadius,
+                           m_settings.theme, m_settings.transparentBackground);
 
-        // Crop center back to exact canvas size (eliminates edge darkening!)
         m_blurredPixels.resize(static_cast<size_t>(m_blurW) * m_blurH);
         for (int y = 0; y < m_blurH; ++y) {
             memcpy(m_blurredPixels.data() + static_cast<size_t>(y) * m_blurW,
@@ -1935,9 +1951,7 @@ private:
         }
     }
 
-    // ========================================================================
-    // DirectWrite Text Measurement & Drawing
-    // ========================================================================
+    // DirectWrite Text Helpers
     float MeasureDirectWriteWidth(const std::wstring& str, size_t count, IDWriteTextFormat* fmt) const {
         if (count == 0 || str.empty() || !m_dwriteFactory || !fmt) return 0.0f;
         count = (min)(count, str.size());
@@ -1990,9 +2004,7 @@ private:
         }
     }
 
-    // ========================================================================
-    // Suggestions & Autocomplete
-    // ========================================================================
+    // Suggestions
     void RebuildSuggestions() {
         m_suggestions.clear();
         m_ghostSuffix.clear();
@@ -2062,9 +2074,7 @@ private:
         }
     }
 
-    // ========================================================================
-    // Text Editing Helpers
-    // ========================================================================
+    // Text Editing
     bool IsBusyState() const {
         return m_animState == AnimState::Executing ||
                m_animState == AnimState::LaunchPending ||
@@ -2238,9 +2248,7 @@ private:
         RenderAndPresent();
     }
 
-    // ========================================================================
-    // Rendering Engine (All 5 Themes + Live Acrylic Blur + DirectWrite)
-    // ========================================================================
+    // Rendering
     void DrawSoftShadow(Gdiplus::Graphics& g, const Gdiplus::RectF& rect, float radius, float alphaScale) {
         const int layers = 6;
         for (int i = layers; i >= 1; --i) {
@@ -2262,6 +2270,7 @@ private:
     void FillSurfaceWithTheme(Gdiplus::Graphics& g,
                               const Gdiplus::GraphicsPath& path,
                               const Gdiplus::RectF& bounds,
+                              float cornerRadius,
                               bool isElevatedTab,
                               float opacityMult,
                               Gdiplus::Bitmap* blurredBmp) {
@@ -2294,18 +2303,14 @@ private:
             }
         };
 
-        if (m_settings.theme == ThemeMode::Translucent11) {
-            // Windows 11 Settings Styler "Translucent Seamless" (Dark Acrylic)
-            // The shader already blended Luminosity (0.40) + Tint (0.35) + Acrylic micro-grain!
+        if (m_settings.theme == ThemeMode::MprdBlur) {
             drawBlurLayer();
 
-            // Subtle seamless dark surface elevation (tab slightly lighter like Win11 nav)
             if (isElevatedTab) {
                 Gdiplus::SolidBrush tabTint(Gdiplus::Color(static_cast<BYTE>(28.0f * opacityMult), 255, 255, 255));
                 g.FillPath(&tabTint, &path);
             }
 
-            // Ultra-subtle seamless Windows 11 Acrylic hairline edge
             Gdiplus::LinearGradientBrush rimGrad(
                 ptTop, ptBot,
                 Gdiplus::Color(static_cast<BYTE>(46.0f * opacityMult), 255, 255, 255),
@@ -2313,41 +2318,10 @@ private:
             rimGrad.SetWrapMode(Gdiplus::WrapModeTileFlipXY);
             Gdiplus::Pen rimPen(&rimGrad, 1.0f * m_scale);
             g.DrawPath(&rimPen, &path);
-        } else if (m_settings.theme == ThemeMode::FrostedGlass) {
-            // Apple Liquid Glass Capsule (matches Photo 4 reference!)
+        } else if (m_settings.theme == ThemeMode::LiquidGlass) {
             drawBlurLayer();
-
-            // Smooth vertical liquid-glass depth gradient (bright top & bottom lens refraction, clear core)
-            Gdiplus::Color lensCols[4] = {
-                Gdiplus::Color(static_cast<BYTE>(54.0f * opacityMult), 255, 255, 255),
-                Gdiplus::Color(static_cast<BYTE>(14.0f * opacityMult), 20, 32, 42),
-                Gdiplus::Color(static_cast<BYTE>(24.0f * opacityMult), 16, 26, 36),
-                Gdiplus::Color(static_cast<BYTE>(68.0f * opacityMult), 255, 255, 255),
-            };
-            Gdiplus::REAL lensPos[4] = {0.0f, 0.24f, 0.78f, 1.0f};
-            Gdiplus::LinearGradientBrush lensBrush(ptTop, ptBot, lensCols[0], lensCols[3]);
-            lensBrush.SetWrapMode(Gdiplus::WrapModeTileFlipXY);
-            lensBrush.SetInterpolationColors(lensCols, lensPos, 4);
-            g.FillPath(&lensBrush, &path);
-
-            // Outer dark refractive glass shadow edge
-            Gdiplus::Pen outerDark(Gdiplus::Color(static_cast<BYTE>(72.0f * opacityMult), 0, 0, 0), 2.0f * m_scale);
-            g.DrawPath(&outerDark, &path);
-
-            // Signature bright crystalline white top & bottom liquid glass bezel (Photo 4!)
-            Gdiplus::Color bezelCols[3] = {
-                Gdiplus::Color(static_cast<BYTE>(185.0f * opacityMult), 255, 255, 255),
-                Gdiplus::Color(static_cast<BYTE>(56.0f * opacityMult), 255, 255, 255),
-                Gdiplus::Color(static_cast<BYTE>(215.0f * opacityMult), 255, 255, 255),
-            };
-            Gdiplus::REAL bezelPos[3] = {0.0f, 0.50f, 1.0f};
-            Gdiplus::LinearGradientBrush bezelGrad(ptTop, ptBot, bezelCols[0], bezelCols[2]);
-            bezelGrad.SetWrapMode(Gdiplus::WrapModeTileFlipXY);
-            bezelGrad.SetInterpolationColors(bezelCols, bezelPos, 3);
-            Gdiplus::Pen bezelPen(&bezelGrad, 1.35f * m_scale);
-            g.DrawPath(&bezelPen, &path);
-        } else if (m_settings.theme == ThemeMode::Minimal11) {
-            // Minimal 11 (Figma SEROJA-LABS): clean flat dark charcoal + crisp 1px border
+            DrawLiquidGlassOverlay(g, path, bounds, cornerRadius, opacityMult, 0.0f, m_scale);
+        } else if (m_settings.theme == ThemeMode::M11Compact) {
             float alphaVal = (128.0f + tintStrength * 140.0f) * opacityMult;
             BYTE a = static_cast<BYTE>((max)(0.0f, (min)(255.0f, alphaVal)));
             Gdiplus::SolidBrush fill(Gdiplus::Color(a, 18, 18, 20));
@@ -2356,7 +2330,6 @@ private:
             Gdiplus::Pen border(Gdiplus::Color(static_cast<BYTE>(220.0f * opacityMult), 50, 50, 56), 1.05f * m_scale);
             g.DrawPath(&border, &path);
         } else if (m_settings.theme == ThemeMode::MidnightAurora) {
-            // Midnight Aurora: live blurred indigo-obsidian glass + subtle cyan->violet rim
             drawBlurLayer();
 
             Gdiplus::LinearGradientBrush auroraVeil(
@@ -2376,7 +2349,7 @@ private:
             Gdiplus::Pen rimPen(&rimGrad, 1.2f * m_scale);
             g.DrawPath(&rimPen, &path);
         } else {
-            // MPRD Legacy (Obsidian Matte)
+            // MPRD Legacy
             float alphaVal = (118.0f + tintStrength * 152.0f) * opacityMult;
             BYTE aTop = static_cast<BYTE>((max)(0.0f, (min)(255.0f, alphaVal)));
             BYTE aBot = static_cast<BYTE>((max)(0.0f, (min)(255.0f, alphaVal + 6.0f)));
@@ -2407,7 +2380,6 @@ private:
         EnsureBackbuffer();
         if (!m_dibBits) return;
 
-        // Compute animated slide offset first so live Acrylic blur aligns 1:1 with exact screen pixels!
         float ease = 1.0f - std::pow(1.0f - m_openProgress, 3.0f);
         BYTE masterAlpha = static_cast<BYTE>((max)(0.0f, (min)(255.0f, ease * 255.0f)));
 
@@ -2440,12 +2412,12 @@ private:
                 reinterpret_cast<BYTE*>(m_blurredPixels.data()));
         }
 
-        const bool isMinimal = IsMinimal11();
-        const bool isFrosted = IsFrostedGlass();
+        const bool isCompact = IsCompact();
+        const bool isLiquid = IsLiquidGlass();
         const bool isExec = (m_animState == AnimState::Executing || m_animState == AnimState::LaunchPending);
         const float rScale = m_scale * (max)(0.80f, (min)(1.22f, m_hRatio));
         const float pillRadius = GetWindowCornerRadius(m_pillH);
-        const float shadowStrength = isMinimal ? 0.65f : (UsesBlurBackdrop() ? 0.78f : 1.0f);
+        const float shadowStrength = isCompact ? 0.65f : (UsesBlurBackdrop() ? 0.78f : 1.0f);
 
         float execEase = m_execProgress < 0.5f
             ? (4.0f * m_execProgress * m_execProgress * m_execProgress)
@@ -2454,7 +2426,7 @@ private:
         float glowBoost = (max)(execGlow, (max)(m_typePulse * 0.42f, m_hoverBadgeAnim * 0.38f));
 
         std::wstring tabLabel;
-        D2D1_COLOR_F tabTextColor = D2D1::ColorF(0.88f, 0.89f, 0.92f, 0.92f);
+        D2D1_COLOR_F tabTextColor = D2D1::ColorF(0.90f, 0.91f, 0.94f, 0.92f);
 
         float dropAlpha = m_settings.enableAnimation
             ? (1.0f - std::pow(1.0f - m_dropProgress, 3.0f))
@@ -2462,11 +2434,8 @@ private:
         int dropCount = GetVisibleSuggestionCount();
         bool drawDropdown = (m_dropdownRect.Height > 1.0f && dropAlpha > 0.01f && dropCount > 0);
 
-        // --------------------------------------------------------------------
-        // 1. Window Surfaces & Shadows
-        // --------------------------------------------------------------------
-        if (isMinimal) {
-            // Minimal 11: ONE unified expandable container (Figma SEROJA-LABS!)
+        // Surfaces & Shadows
+        if (isCompact) {
             Gdiplus::RectF unifiedRect = m_pillRect;
             if (drawDropdown) {
                 if (m_dropUpward) {
@@ -2486,16 +2455,14 @@ private:
             Gdiplus::GraphicsPath unifiedPath;
             AddUniformRoundRect(unifiedPath, unifiedRect.X, unifiedRect.Y,
                                 unifiedRect.Width, unifiedRect.Height, minRadius);
-            FillSurfaceWithTheme(g, unifiedPath, unifiedRect, false, 1.0f, nullptr);
+            FillSurfaceWithTheme(g, unifiedPath, unifiedRect, minRadius, false, 1.0f, nullptr);
 
-            // Crisp 1px horizontal divider separating search row & suggestion rows
             if (drawDropdown) {
                 float divY = m_dropUpward ? m_pillRect.Y : m_pillRect.GetBottom();
                 Gdiplus::Pen divPen(Gdiplus::Color(static_cast<BYTE>(200.0f * dropAlpha), 42, 42, 48), 1.0f * m_scale);
                 g.DrawLine(&divPen, unifiedRect.X + 1.0f, divY, unifiedRect.GetRight() - 1.0f, divY);
             }
         } else {
-            // Floating Pill + Optional Status Tab + Separate Floating Dropdown
             if (ShowsStatusTab() && m_tabRect.Width > 0) {
                 float tabR = (max)(6.0f * rScale, (min)(13.0f * rScale, m_tabH * (m_settings.roundedWindow / 100.0f) * 1.15f));
                 DrawSoftShadow(g, Gdiplus::RectF(m_tabRect.X, m_tabRect.Y, m_tabRect.Width, m_tabH),
@@ -2505,7 +2472,7 @@ private:
                 AddRoundedRectPath(tabPath, m_tabRect.X, m_tabRect.Y,
                                    m_tabRect.Width, m_tabRect.Height,
                                    tabR, tabR, 0.0f, 0.0f);
-                FillSurfaceWithTheme(g, tabPath, m_tabRect, true, 1.0f, blurredBmp.get());
+                FillSurfaceWithTheme(g, tabPath, m_tabRect, tabR, true, 1.0f, blurredBmp.get());
 
                 if (m_hoverTabAnim > 0.01f) {
                     Gdiplus::SolidBrush hov(Gdiplus::Color(static_cast<BYTE>(28.0f * m_hoverTabAnim), 255, 255, 255));
@@ -2536,8 +2503,8 @@ private:
                     tabTextColor = D2D1::ColorF(0.99f, 0.83f, 0.30f, 1.0f);
                 } else {
                     DrawFilledBoltIcon(g, iconCx, iconCy, 11.5f * rScale,
-                                       isFrosted ? Gdiplus::Color(235, 255, 255, 255)
-                                                 : Gdiplus::Color(255, 56, 189, 248));
+                                       isLiquid ? Gdiplus::Color(240, 255, 255, 255)
+                                                : Gdiplus::Color(255, 56, 189, 248));
                     tabLabel = L"Run  \x00B7  Win + R";
                 }
             }
@@ -2546,7 +2513,7 @@ private:
             Gdiplus::GraphicsPath pillPath;
             AddUniformRoundRect(pillPath, m_pillRect.X, m_pillRect.Y,
                                 m_pillRect.Width, m_pillRect.Height, pillRadius);
-            FillSurfaceWithTheme(g, pillPath, m_pillRect, false, 1.0f, blurredBmp.get());
+            FillSurfaceWithTheme(g, pillPath, m_pillRect, pillRadius, false, 1.0f, blurredBmp.get());
 
             if (drawDropdown) {
                 float dropRadius = (min)(pillRadius, m_dropdownRect.Height * 0.42f);
@@ -2554,13 +2521,11 @@ private:
                 Gdiplus::GraphicsPath dropPath;
                 AddUniformRoundRect(dropPath, m_dropdownRect.X, m_dropdownRect.Y,
                                     m_dropdownRect.Width, m_dropdownRect.Height, dropRadius);
-                FillSurfaceWithTheme(g, dropPath, m_dropdownRect, false, dropAlpha, blurredBmp.get());
+                FillSurfaceWithTheme(g, dropPath, m_dropdownRect, dropRadius, false, dropAlpha, blurredBmp.get());
             }
         }
 
-        // --------------------------------------------------------------------
-        // 2. Left Icon (Minimal 11 Outline Search OR Glowing Pill Badge + 360° Spin)
-        // --------------------------------------------------------------------
+        // Left Icon & Launch Spin
         {
             float cx = m_badgeRect.X + m_badgeRect.Width * 0.5f;
             float cy = m_badgeRect.Y + m_badgeRect.Height * 0.5f;
@@ -2573,18 +2538,15 @@ private:
                 g.TranslateTransform(-cx, -cy);
             }
 
-            if (isMinimal) {
-                // Clean Minimal 11 outline search icon (brightens & spins 360° on execute!)
+            if (isCompact) {
                 Gdiplus::Color baseCol = m_adminMode
                     ? Gdiplus::Color(235, 245, 158, 11)
                     : Gdiplus::Color(210, 156, 158, 166);
                 Gdiplus::Color litCol = m_adminMode
                     ? Gdiplus::Color(255, 254, 240, 138)
                     : Gdiplus::Color(255, 255, 255, 255);
-                Gdiplus::Color col = LerpColor(baseCol, litCol, glowBoost);
-                DrawOutlineSearchIcon(g, cx, cy, m_badgeRect.Width * 0.62f, col);
+                DrawOutlineSearchIcon(g, cx, cy, m_badgeRect.Width * 0.62f, LerpColor(baseCol, litCol, glowBoost));
             } else {
-                // Radiant outer glow on typing/hover/execute
                 if (glowBoost > 0.01f) {
                     for (int r = 3; r >= 1; --r) {
                         float exp = r * 3.6f * rScale * (0.6f + 0.5f * glowBoost);
@@ -2597,20 +2559,19 @@ private:
                                             11.0f * rScale + exp * 0.5f);
                         Gdiplus::SolidBrush gb(m_adminMode
                             ? Gdiplus::Color(ga, 253, 210, 60)
-                            : (isFrosted ? Gdiplus::Color(ga, 224, 242, 254) : Gdiplus::Color(ga, 96, 224, 255)));
+                            : (isLiquid ? Gdiplus::Color(ga, 240, 248, 255) : Gdiplus::Color(ga, 96, 224, 255)));
                         g.FillPath(&gb, &gp);
                     }
                 }
 
-                // Restore transform before drawing fixed brackets, then re-apply for spinning inner icon
                 g.Restore(iconState);
 
                 Gdiplus::Color baseBracket = m_adminMode
                     ? Gdiplus::Color(220, 245, 158, 11)
-                    : (isFrosted ? Gdiplus::Color(175, 255, 255, 255) : Gdiplus::Color(215, 56, 189, 248));
+                    : (isLiquid ? Gdiplus::Color(185, 255, 255, 255) : Gdiplus::Color(215, 56, 189, 248));
                 Gdiplus::Color brightBracket = m_adminMode
                     ? Gdiplus::Color(255, 254, 232, 128)
-                    : (isFrosted ? Gdiplus::Color(255, 255, 255, 255) : Gdiplus::Color(255, 186, 238, 255));
+                    : (isLiquid ? Gdiplus::Color(255, 255, 255, 255) : Gdiplus::Color(255, 186, 238, 255));
                 DrawCornerBrackets(g, m_badgeRect.X, m_badgeRect.Y, m_badgeRect.Width,
                                    m_badgeRect.Width * 0.21f, (1.45f + 0.35f * execGlow) * m_scale,
                                    LerpColor(baseBracket, brightBracket, glowBoost));
@@ -2622,14 +2583,14 @@ private:
                 Gdiplus::GraphicsPath badgePath;
                 AddUniformRoundRect(badgePath, inner.X, inner.Y, inner.Width, inner.Height, inner.Width * 0.26f);
 
-                BYTE topA = static_cast<BYTE>((min)(255.0f, (isFrosted ? 54.0f : 74.0f) + 140.0f * execGlow + 34.0f * (max)(m_typePulse, m_hoverBadgeAnim)));
-                BYTE botA = static_cast<BYTE>((min)(255.0f, (isFrosted ? 24.0f : 36.0f) + 115.0f * execGlow + 20.0f * (max)(m_typePulse, m_hoverBadgeAnim)));
+                BYTE topA = static_cast<BYTE>((min)(255.0f, (isLiquid ? 54.0f : 74.0f) + 140.0f * execGlow + 34.0f * (max)(m_typePulse, m_hoverBadgeAnim)));
+                BYTE botA = static_cast<BYTE>((min)(255.0f, (isLiquid ? 24.0f : 36.0f) + 115.0f * execGlow + 20.0f * (max)(m_typePulse, m_hoverBadgeAnim)));
                 Gdiplus::Color gradTop = m_adminMode
                     ? Gdiplus::Color(topA, 250, 185, 32)
-                    : (isFrosted ? Gdiplus::Color(topA, 255, 255, 255) : Gdiplus::Color(topA, 56, 204, 255));
+                    : (isLiquid ? Gdiplus::Color(topA, 255, 255, 255) : Gdiplus::Color(topA, 56, 204, 255));
                 Gdiplus::Color gradBot = m_adminMode
                     ? Gdiplus::Color(botA, 202, 102, 12)
-                    : (isFrosted ? Gdiplus::Color(botA, 186, 212, 230) : Gdiplus::Color(botA, 14, 152, 233));
+                    : (isLiquid ? Gdiplus::Color(botA, 186, 212, 230) : Gdiplus::Color(botA, 14, 152, 233));
 
                 Gdiplus::LinearGradientBrush badgeFill(
                     Gdiplus::PointF(inner.X, inner.Y - 1.0f),
@@ -2654,9 +2615,9 @@ private:
                     DrawFilledShieldIcon(g, cx, cy, badgeIconSz, shieldCol);
                 } else {
                     Gdiplus::Color termCol = LerpColor(
-                        isFrosted ? Gdiplus::Color(245, 255, 255, 255) : Gdiplus::Color(255, 56, 189, 248),
+                        isLiquid ? Gdiplus::Color(245, 255, 255, 255) : Gdiplus::Color(255, 56, 189, 248),
                         Gdiplus::Color(255, 236, 250, 255), execGlow);
-                    Gdiplus::Color cutCol = isFrosted
+                    Gdiplus::Color cutCol = isLiquid
                         ? Gdiplus::Color(255, 34, 48, 60)
                         : Gdiplus::Color(255, 12, 32, 48);
                     DrawFilledTerminalIcon(g, cx, cy, badgeIconSz, termCol, cutCol);
@@ -2665,9 +2626,7 @@ private:
             g.Restore(iconState);
         }
 
-        // --------------------------------------------------------------------
-        // 3. Text Selection Highlight & Caret
-        // --------------------------------------------------------------------
+        // Selection & Caret
         float caretTextX = MeasureDirectWriteWidth(m_text, m_caret, m_fmtInput);
         float viewW = m_inputRect.Width - 4.0f * m_scale;
         if (caretTextX - m_scrollX > viewW) {
@@ -2689,7 +2648,7 @@ private:
                 float x2 = m_inputRect.X + MeasureDirectWriteWidth(m_text, SelEnd(), m_fmtInput) - m_scrollX;
                 Gdiplus::Color selCol = m_adminMode
                     ? Gdiplus::Color(92, 245, 158, 11)
-                    : (isMinimal ? Gdiplus::Color(70, 255, 255, 255) : Gdiplus::Color(92, 56, 189, 248));
+                    : (isCompact ? Gdiplus::Color(70, 255, 255, 255) : Gdiplus::Color(92, 56, 189, 248));
                 Gdiplus::SolidBrush selBrush(selCol);
                 Gdiplus::GraphicsPath selPath;
                 AddUniformRoundRect(selPath, x1, caretY - 1.5f * m_scale,
@@ -2710,9 +2669,7 @@ private:
             g.Restore(saved);
         }
 
-        // --------------------------------------------------------------------
-        // 4. Browse Folder Button (Smooth Hover)
-        // --------------------------------------------------------------------
+        // Browse Button
         {
             if (m_hoverBrowseAnim > 0.01f) {
                 Gdiplus::SolidBrush hovBrush(Gdiplus::Color(static_cast<BYTE>(30.0f * m_hoverBrowseAnim), 255, 255, 255));
@@ -2720,7 +2677,7 @@ private:
             }
             float fcx = m_browseRect.X + m_browseRect.Width * 0.5f;
             float fcy = m_browseRect.Y + m_browseRect.Height * 0.5f;
-            if (isMinimal) {
+            if (isCompact) {
                 Gdiplus::Color col = LerpColor(Gdiplus::Color(180, 148, 150, 158), Gdiplus::Color(255, 255, 255, 255), m_hoverBrowseAnim);
                 DrawOutlineFolderIcon(g, fcx, fcy, m_browseRect.Width * 0.56f, col);
             } else {
@@ -2729,9 +2686,7 @@ private:
             }
         }
 
-        // --------------------------------------------------------------------
-        // 5. Run Action Button (Theme-Tailored!)
-        // --------------------------------------------------------------------
+        // Run Button
         std::wstring runBtnText = m_adminMode ? L"Run Admin" : L"Run";
         float runIconSz = (m_adminMode ? 11.5f : 10.5f) * rScale;
         float runIconGap = 6.5f * rScale;
@@ -2744,8 +2699,7 @@ private:
             float rcx = m_runBtnRect.X + m_runBtnRect.Width * 0.5f;
             float rcy = m_runBtnRect.Y + m_runBtnRect.Height * 0.5f;
 
-            if (isMinimal) {
-                // Minimal 11: Clean outline circle-chevron '( > )' with smooth hover glow
+            if (isCompact) {
                 if (h > 0.01f) {
                     Gdiplus::SolidBrush hov(Gdiplus::Color(static_cast<BYTE>(34.0f * h), 255, 255, 255));
                     g.FillEllipse(&hov, m_runBtnRect);
@@ -2753,39 +2707,29 @@ private:
                 Gdiplus::Color baseCol = m_adminMode ? Gdiplus::Color(235, 245, 158, 11) : Gdiplus::Color(195, 156, 158, 166);
                 Gdiplus::Color litCol = m_adminMode ? Gdiplus::Color(255, 254, 240, 138) : Gdiplus::Color(255, 255, 255, 255);
                 DrawCircleChevronRightIcon(g, rcx, rcy, m_runBtnRect.Width * 0.60f, LerpColor(baseCol, litCol, h));
-            } else if (isFrosted) {
-                // Frosted Glass: Recessed Liquid Glass inner capsule + RIGHT ARROW ONLY (NO "Run" label!)
+            } else if (isLiquid) {
+                float btnR = m_runBtnRect.Height * 0.5f;
                 Gdiplus::GraphicsPath btnPath;
                 AddUniformRoundRect(btnPath, m_runBtnRect.X, m_runBtnRect.Y,
-                                    m_runBtnRect.Width, m_runBtnRect.Height, m_runBtnRect.Height * 0.5f);
+                                    m_runBtnRect.Width, m_runBtnRect.Height, btnR);
 
-                Gdiplus::PointF gStart(m_runBtnRect.X, m_runBtnRect.Y);
-                Gdiplus::PointF gEnd(m_runBtnRect.GetRight(), m_runBtnRect.GetBottom());
-                Gdiplus::Color c1 = m_adminMode
-                    ? LerpColor(Gdiplus::Color(110, 245, 158, 11), Gdiplus::Color(195, 251, 191, 36), h)
-                    : LerpColor(Gdiplus::Color(58, 255, 255, 255), Gdiplus::Color(140, 255, 255, 255), h);
-                Gdiplus::Color c2 = m_adminMode
-                    ? LerpColor(Gdiplus::Color(70, 180, 83, 9), Gdiplus::Color(150, 217, 119, 6), h)
-                    : LerpColor(Gdiplus::Color(28, 180, 204, 220), Gdiplus::Color(92, 186, 224, 248), h);
+                if (m_adminMode) {
+                    Gdiplus::PointF gStart(m_runBtnRect.X, m_runBtnRect.Y);
+                    Gdiplus::PointF gEnd(m_runBtnRect.GetRight(), m_runBtnRect.GetBottom());
+                    Gdiplus::LinearGradientBrush fill(gStart, gEnd,
+                        LerpColor(Gdiplus::Color(115, 245, 158, 11), Gdiplus::Color(195, 251, 191, 36), h),
+                        LerpColor(Gdiplus::Color(75, 180, 83, 9), Gdiplus::Color(155, 217, 119, 6), h));
+                    fill.SetWrapMode(Gdiplus::WrapModeTileFlipXY);
+                    g.FillPath(&fill, &btnPath);
+                }
 
-                Gdiplus::LinearGradientBrush fill(gStart, gEnd, c1, c2);
-                fill.SetWrapMode(Gdiplus::WrapModeTileFlipXY);
-                g.FillPath(&fill, &btnPath);
+                DrawLiquidGlassOverlay(g, btnPath, m_runBtnRect, btnR, 1.0f, h, m_scale);
 
-                Gdiplus::Color rim1 = LerpColor(Gdiplus::Color(145, 255, 255, 255), Gdiplus::Color(245, 255, 255, 255), h);
-                Gdiplus::Color rim2 = LerpColor(Gdiplus::Color(60, 255, 255, 255), Gdiplus::Color(180, 255, 255, 255), h);
-                Gdiplus::LinearGradientBrush rim(gStart, gEnd, rim1, rim2);
-                rim.SetWrapMode(Gdiplus::WrapModeTileFlipXY);
-                Gdiplus::Pen border(&rim, 1.15f * m_scale);
-                g.DrawPath(&border, &btnPath);
-
-                // Minimal crisp right-pointing arrow '->' (centered!)
                 Gdiplus::Color arrowCol = m_adminMode
                     ? Gdiplus::Color(255, 254, 240, 138)
                     : Gdiplus::Color(255, 255, 255, 255);
                 DrawRightArrowIcon(g, rcx, rcy, m_runBtnRect.Height * 0.44f, arrowCol);
             } else {
-                // Translucent 11 / MPRD Legacy / Midnight Aurora: Centered Icon+Label + Gradient Hover
                 Gdiplus::GraphicsPath btnPath;
                 AddUniformRoundRect(btnPath, m_runBtnRect.X, m_runBtnRect.Y,
                                     m_runBtnRect.Width, m_runBtnRect.Height, m_runBtnRect.Height * 0.5f);
@@ -2834,10 +2778,8 @@ private:
             }
         }
 
-        // --------------------------------------------------------------------
-        // 6. Far-Right Close Button ('X') — hidden in Minimal 11
-        // --------------------------------------------------------------------
-        if (!isMinimal && m_closeRect.Width > 0) {
+        // Close Button
+        if (!isCompact && m_closeRect.Width > 0) {
             if (m_hoverCloseAnim > 0.01f) {
                 Gdiplus::SolidBrush hov(Gdiplus::Color(static_cast<BYTE>(40.0f * m_hoverCloseAnim), 255, 255, 255));
                 g.FillEllipse(&hov, m_closeRect);
@@ -2851,9 +2793,7 @@ private:
                                  m_closeRect.Width * 0.35f, xCol);
         }
 
-        // --------------------------------------------------------------------
-        // 7. Dropdown Row Highlights & Icons
-        // --------------------------------------------------------------------
+        // Dropdown Rows & Icons
         if (drawDropdown) {
             Gdiplus::GraphicsState dClip = g.Save();
             g.SetClip(m_dropdownRect);
@@ -2875,9 +2815,9 @@ private:
                                         (min)(10.0f * rScale, pillRadius * 0.65f));
                     Gdiplus::Color hlCol;
                     if (isSelected) {
-                        BYTE hlA = static_cast<BYTE>((isMinimal ? 34.0f : 54.0f) * dropAlpha);
+                        BYTE hlA = static_cast<BYTE>((isCompact ? 34.0f : 54.0f) * dropAlpha);
                         hlCol = m_adminMode ? Gdiplus::Color(hlA, 245, 158, 11)
-                                            : (isMinimal ? Gdiplus::Color(hlA, 255, 255, 255)
+                                            : (isCompact ? Gdiplus::Color(hlA, 255, 255, 255)
                                                          : Gdiplus::Color(hlA, 56, 189, 248));
                     } else {
                         BYTE hlA = static_cast<BYTE>(26.0f * rowHov * dropAlpha);
@@ -2887,12 +2827,11 @@ private:
                     g.FillPath(&hlBrush, &rp);
                 }
 
-                float icx = rowRect.X + (isMinimal ? 18.0f : 20.0f) * rScale;
+                float icx = rowRect.X + (isCompact ? 18.0f : 20.0f) * rScale;
                 float icy = rowRect.Y + rowRect.Height * 0.5f;
                 BYTE icA = static_cast<BYTE>((isSelected ? 255.0f : (195.0f + 60.0f * rowHov)) * dropAlpha);
 
-                if (isMinimal) {
-                    // Figma SEROJA-LABS: crisp bent sub-arrow '↳'
+                if (isCompact) {
                     Gdiplus::Color arrCol = isSelected
                         ? Gdiplus::Color(icA, 255, 255, 255)
                         : Gdiplus::Color(icA, 138, 140, 148);
@@ -2925,16 +2864,13 @@ private:
 
         g.Flush(Gdiplus::FlushIntentionSync);
 
-        // --------------------------------------------------------------------
-        // 8. Direct2D + DirectWrite Ultra-Smooth Typography Pass
-        // --------------------------------------------------------------------
+        // DirectWrite Typography Pass
         if (m_d2dTarget) {
             RECT bindRc = {0, 0, m_canvasW, m_canvasH};
             if (SUCCEEDED(m_d2dTarget->BindDC(m_memDC, &bindRc))) {
                 m_d2dTarget->BeginDraw();
                 m_d2dTarget->SetTextAntialiasMode(D2D1_TEXT_ANTIALIAS_MODE_GRAYSCALE);
 
-                // A. Status tab text
                 if (ShowsStatusTab() && m_tabRect.Width > 0 && !tabLabel.empty()) {
                     Gdiplus::RectF tabTextRect(
                         m_tabRect.X + 27.0f * rScale,
@@ -2944,7 +2880,6 @@ private:
                     DrawD2DText(tabLabel, m_fmtTab, tabTextRect, tabTextColor);
                 }
 
-                // B. Input / Placeholder / Ghost Autocomplete
                 {
                     D2D1_RECT_F clipRc = D2D1::RectF(
                         m_inputRect.X, m_inputRect.Y,
@@ -2952,34 +2887,33 @@ private:
                     m_d2dTarget->PushAxisAlignedClip(clipRc, D2D1_ANTIALIAS_MODE_ALIASED);
 
                     if (m_text.empty()) {
-                        std::wstring placeholder = !m_errorMsg.empty() && isMinimal
+                        std::wstring placeholder = !m_errorMsg.empty() && isCompact
                             ? m_errorMsg
                             : (m_adminMode
                                 ? L"Run a command as Administrator.."
-                                : (isMinimal ? L"Type command, app, or path.." : L"Type a command, app, or path.."));
-                        D2D1_COLOR_F phCol = (!m_errorMsg.empty() && isMinimal)
+                                : (isCompact ? L"Type command, app, or path.." : L"Type a command, app, or path.."));
+                        D2D1_COLOR_F phCol = (!m_errorMsg.empty() && isCompact)
                             ? D2D1::ColorF(0.98f, 0.56f, 0.56f, 0.92f)
-                            : (isMinimal ? D2D1::ColorF(0.50f, 0.51f, 0.55f, 0.85f)
-                                         : D2D1::ColorF(0.84f, 0.86f, 0.90f, 0.72f));
+                            : (isCompact ? D2D1::ColorF(0.50f, 0.51f, 0.55f, 0.85f)
+                                         : D2D1::ColorF(0.86f, 0.88f, 0.92f, 0.76f));
                         DrawD2DText(placeholder, m_fmtInput, m_inputRect, phCol);
                     } else {
                         Gdiplus::RectF scrolledRect(
                             m_inputRect.X - m_scrollX, m_inputRect.Y, 10000.0f, m_inputRect.Height);
-                        DrawD2DText(m_text, m_fmtInput, scrolledRect, D2D1::ColorF(0.97f, 0.97f, 0.99f, 1.0f));
+                        DrawD2DText(m_text, m_fmtInput, scrolledRect, D2D1::ColorF(0.98f, 0.98f, 1.0f, 1.0f));
 
                         if (!m_ghostSuffix.empty()) {
                             float fullW = MeasureDirectWriteWidth(m_text, m_text.size(), m_fmtInput);
                             Gdiplus::RectF ghostRect(
                                 m_inputRect.X + fullW - m_scrollX, m_inputRect.Y, 10000.0f, m_inputRect.Height);
-                            DrawD2DText(m_ghostSuffix, m_fmtInput, ghostRect, D2D1::ColorF(0.72f, 0.74f, 0.78f, 0.52f));
+                            DrawD2DText(m_ghostSuffix, m_fmtInput, ghostRect, D2D1::ColorF(0.76f, 0.78f, 0.82f, 0.54f));
                         }
                     }
 
                     m_d2dTarget->PopAxisAlignedClip();
                 }
 
-                // C. Centered Run button label (omitted for Minimal 11 & Frosted Glass icon-only!)
-                if (!isMinimal && !isFrosted) {
+                if (!isCompact && !isLiquid) {
                     D2D1_COLOR_F btnCol = m_adminMode
                         ? D2D1::ColorF(0.99f, 0.93f, 0.46f, 1.0f)
                         : D2D1::ColorF(0.98f, 0.98f, 1.0f, 1.0f);
@@ -2991,7 +2925,6 @@ private:
                     DrawD2DText(runBtnText, m_fmtButton, lblRect, btnCol);
                 }
 
-                // D. Dropdown suggestion rows
                 if (drawDropdown) {
                     D2D1_RECT_F dropClip = D2D1::RectF(
                         m_dropdownRect.X, m_dropdownRect.Y,
@@ -3008,8 +2941,7 @@ private:
 
                         bool isSelected = (i == m_selectedSuggestion);
 
-                        if (isMinimal) {
-                            // Figma SEROJA-LABS: Title on left + descriptive subtitle on right!
+                        if (isCompact) {
                             float descW = rowRect.Width * 0.56f;
                             Gdiplus::RectF titleRect(
                                 rowRect.X + 36.0f * rScale,
@@ -3035,7 +2967,7 @@ private:
                                 rowRect.Height);
                             DrawD2DText(item.command, m_fmtRow, cmdRect,
                                         isSelected ? D2D1::ColorF(1.0f, 1.0f, 1.0f, dropAlpha)
-                                                   : D2D1::ColorF(0.93f, 0.94f, 0.96f, 0.94f * dropAlpha));
+                                                   : D2D1::ColorF(0.94f, 0.95f, 0.97f, 0.94f * dropAlpha));
 
                             Gdiplus::RectF badgeTxtRect(
                                 rowRect.GetRight() - 74.0f * rScale,
@@ -3043,7 +2975,7 @@ private:
                                 62.0f * rScale,
                                 rowRect.Height);
                             DrawD2DText(item.badge, m_fmtBadge, badgeTxtRect,
-                                        D2D1::ColorF(0.76f, 0.78f, 0.84f, 0.72f * dropAlpha));
+                                        D2D1::ColorF(0.78f, 0.80f, 0.86f, 0.74f * dropAlpha));
                         }
                     }
                     m_d2dTarget->PopAxisAlignedClip();
@@ -3053,9 +2985,7 @@ private:
             }
         }
 
-        // --------------------------------------------------------------------
-        // 9. Present via UpdateLayeredWindow
-        // --------------------------------------------------------------------
+        // Present Layered Window
         POINT ptSrc = {0, 0};
         POINT ptDst = {presentX, presentY};
         SIZE szWnd = {m_canvasW, m_canvasH};
@@ -3070,12 +3000,10 @@ private:
         ReleaseDC(nullptr, screenDC);
     }
 
-    // ========================================================================
-    // Hit Testing & Mouse / Keyboard Events
-    // ========================================================================
+    // Input & Window Messages
     HoverTarget HitTestPoint(float x, float y, int& outDropIndex) const {
         outDropIndex = -1;
-        if (!IsMinimal11() && m_closeRect.Contains(x, y)) return HoverTarget::CloseBtn;
+        if (!IsCompact() && m_closeRect.Contains(x, y)) return HoverTarget::CloseBtn;
         if (m_runBtnRect.Contains(x, y)) return HoverTarget::RunBtn;
         if (m_browseRect.Contains(x, y)) return HoverTarget::BrowseBtn;
         if (m_badgeRect.Contains(x, y)) return HoverTarget::LeftBadge;
@@ -3263,7 +3191,6 @@ private:
                     GetCursorPos(&cur);
                     m_winX = m_dragStartWin.x + (cur.x - m_dragStartCursor.x);
                     m_winY = m_dragStartWin.y + (cur.y - m_dragStartCursor.y);
-                    // Live 60fps real-time Acrylic blur update while dragging!
                     RenderAndPresent();
                     return 0;
                 }
@@ -3621,9 +3548,7 @@ private:
     }
 };
 
-// ============================================================================
-// shell32.dll Ordinal 61 (RunFileDlg) Hook
-// ============================================================================
+// RunFileDlg Hook (shell32.dll ordinal 61)
 using RunFileDlg_t = void(WINAPI*)(
     HWND hwndOwner,
     HICON hIcon,
@@ -3663,30 +3588,23 @@ void WINAPI RunFileDlg_Hook(
 
 } // namespace
 
-// ============================================================================
-// Windhawk Lifecycle Callbacks
-// ============================================================================
+// Windhawk Callbacks
 BOOL Wh_ModInit() {
-    Wh_Log(L"Initializing MPRD - Modern Pill Run Dialog v1.2.0");
     LoadSettings();
 
     HMODULE hShell32 = LoadLibraryW(L"shell32.dll");
     if (!hShell32) {
-        Wh_Log(L"Failed to load shell32.dll");
         return FALSE;
     }
 
-    // RunFileDlg is exported at ordinal 61 in shell32.dll
     void* pRunFileDlg = reinterpret_cast<void*>(GetProcAddress(hShell32, MAKEINTRESOURCEA(61)));
     if (!pRunFileDlg) {
-        Wh_Log(L"Failed to locate RunFileDlg (ordinal 61) in shell32.dll");
         return FALSE;
     }
 
     if (!Wh_SetFunctionHook(pRunFileDlg,
                             reinterpret_cast<void*>(RunFileDlg_Hook),
                             reinterpret_cast<void**>(&RunFileDlg_Original))) {
-        Wh_Log(L"Failed to hook RunFileDlg");
         return FALSE;
     }
 
@@ -3694,7 +3612,6 @@ BOOL Wh_ModInit() {
 }
 
 void Wh_ModUninit() {
-    Wh_Log(L"Uninitializing MPRD - Modern Pill Run Dialog");
     g_modUnloading.store(true);
     HWND active = g_activeDialogHwnd.load();
     if (active && IsWindow(active)) {
@@ -3706,6 +3623,5 @@ void Wh_ModUninit() {
 }
 
 void Wh_ModSettingsChanged() {
-    Wh_Log(L"MPRD - Modern Pill Run Dialog settings reloaded");
     LoadSettings();
 }

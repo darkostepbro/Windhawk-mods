@@ -2,22 +2,22 @@
 
 ![MPRD Preview](assets/preview.png)
 
-Replaces the legacy Windows Run dialog (`Win + R`) with a sleek, floating pill command bar built with **DirectWrite anti-aliased typography**, **Windows 11 Acrylic HostBackdrop blur**, clean vector icons, live Windows `RunMRU` history, inline autocomplete, quick Admin elevation, custom rounded corners, and fluid hover & launch polish animations.
+Replaces the legacy Windows Run dialog (`Win + R`) with a sleek, floating pill command bar built with **DirectWrite anti-aliased typography**, **live Acrylic backdrop blur**, clean vector icons, live Windows `RunMRU` history, inline autocomplete, quick Admin elevation, custom rounded corners, and fluid hover & launch polish animations.
 
 ## Themes
-1. **Translucent 11** — Seamless dark Windows 11 Acrylic frosted blur modeled after *Translucent Seamless* (`TintLuminosityOpacity 0.4`, `TintOpacity 0.35`, subtle Acrylic micro-grain, borderless glass).
-2. **Minimal 11** — Ultra-minimalist single expandable dark command bar with outline icons (`🔍`, folder, `( > )`) and inline unified suggestions list.
-3. **Frosted Glass** — Translucent liquid glass capsule with bright crystalline rim reflections and a minimal right-arrow (`→`) icon-only action button.
-4. **MPRD Legacy** — Classic obsidian matte floating pill with crisp rim lighting and soft diffused shadow.
+1. **MPRD Blur** — Seamless dark Acrylic frosted blur with balanced luminosity, soft tint, and subtle micro-grain.
+2. **MPRD Legacy** — Classic obsidian matte floating pill with crisp rim lighting and soft diffused shadow.
+3. **M-11 Compact** — Ultra-minimalist single expandable dark command bar with outline icons (`🔍`, folder, `( > )`) and inline unified suggestions list.
+4. **Liquid Glass** — Translucent convex liquid glass capsule with bright crystalline top/bottom rim reflections, soft bottom internal glow, and a circular right-arrow (`→`) icon-only action button.
 5. **Midnight Aurora** — Deep smoked indigo-obsidian frosted glass with a subtle cyan-to-violet ambient rim gradient.
 
 ## Key Features
-- **DirectWrite Smooth Typography** — Razor-sharp grayscale anti-aliased rendering (defaults to **Google Sans**, with graceful fallback to Segoe UI Variable / Segoe UI).
+- **DirectWrite Smooth Typography** — Crisp grayscale anti-aliased rendering (defaults to **Google Sans**, with graceful fallback to Segoe UI Variable / Segoe UI).
 - **Custom with your Favorite Font** — Enter any installed Windows font family directly in Mod Settings.
-- **Transparent Background (`10% – 100%`)** — Fine-tune background/Acrylic translucency from a dropdown.
+- **Transparent Background (`10% – 100%`)** — Fine-tune background/glass transparency from a dropdown.
 - **Rounded Window (`10% – 50%`)** — Custom border radius applied cleanly to the entire Run dialog window (minimum `10%`, never `0`).
 - **Responsive Pill Window (`WIDTHxHEIGHT`)** — Customize width and height cleanly; icons, buttons, padding, and typography auto-scale responsively.
-- **Show Run Dialog on Taskbar & Move with Cursor** — Explicitly toggle Windows Taskbar presence and cursor dragging.
+- **Show Run Dialog on Taskbar & Move with Cursor** — Toggle Windows Taskbar presence and cursor dragging.
 - **Authentic Bottom-Left (Classic) Mode** — Sits snugly above the taskbar and unfolds suggestions upward.
 - **Polished Animations** — Smooth top-to-bottom open/close glides, smooth hover transitions on every control, animated gradient sweep on the centered Run button, typing glow feedback, and a luminous 360° in-place icon spin before launching.
 
@@ -43,13 +43,13 @@ For **`1920x1080`** displays or smaller, adjust **`Pill Window (px)`** in Windha
 
 # MPRD - Modern Pill Run Dialog (Bahasa Indonesia)
 
-Mengganti dialog Run klasik Windows (`Win + R`) menjadi *floating pill command bar* yang modern, bersih, dan responsif dengan **render teks DirectWrite anti-pecah**, **efek blur Acrylic seamless bergaya Windows 11**, pilihan desain ultra-minimalis, sinkronisasi riwayat `RunMRU` Windows, autocomplete instan, mode Admin 1-klik, custom rounded window, serta animasi polish yang halus.
+Mengganti dialog Run klasik Windows (`Win + R`) menjadi *floating pill command bar* yang modern, bersih, dan responsif dengan **render teks DirectWrite anti-pecah**, **efek blur Acrylic live**, pilihan desain ultra-minimalis & liquid glass, sinkronisasi riwayat `RunMRU` Windows, autocomplete instan, mode Admin 1-klik, custom rounded window, serta animasi polish yang halus.
 
 ## Pilihan Tema
-1. **Translucent 11** — Efek blur Acrylic gelap seamless bergaya *Translucent Seamless* di Windows 11 Settings Styler (`TintLuminosityOpacity 0.4`, `TintOpacity 0.35`, grain Acrylic halus, kaca tanpa sekat kasar).
-2. **Minimal 11** — UI super minimalis dengan satu window menyatu, icon outline bersih (`🔍`, folder, `( > )`), dan daftar saran terintegrasi di dalam kotak yang sama.
-3. **Frosted Glass** — Kapsul liquid glass transparan dengan pantulan rim kaca terang dan tombol eksekusi hanya berupa icon panah kanan (`→`) tanpa label teks.
-4. **MPRD Legacy** — Permukaan gelap obsidian matte klasik dengan rim highlight tipis dan bayangan lembut.
+1. **MPRD Blur** — Efek blur Acrylic gelap seamless dengan luminosity seimbang, tint halus, dan micro-grain tipis.
+2. **MPRD Legacy** — Permukaan gelap obsidian matte klasik dengan rim highlight tipis dan bayangan lembut.
+3. **M-11 Compact** — UI super minimalis dengan satu window menyatu, icon outline bersih (`🔍`, folder, `( > )`), dan daftar saran terintegrasi di dalam kotak yang sama.
+4. **Liquid Glass** — Kapsul liquid glass transparan dengan pantulan rim kaca putih kristal terang di atas/bawah, pendar cahaya lembut di tepi bawah, dan tombol lingkaran icon panah kanan (`→`) tanpa label teks.
 5. **Midnight Aurora** — Kaca gelap indigo-obsidian dengan aksen gradasi rim tipis cyan ke violet.
 
 ## Fitur Utama
