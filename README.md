@@ -2,22 +2,31 @@
 
 A curated collection of clean, modern Windows UI/UX mods built for [Windhawk](https://windhawk.net/).
 
-![MPRD Preview](assets/preview.png)
+## Mods Catalog
 
-## Overview
-This repository hosts standalone Windhawk mods (`.wh.cpp`) designed to modernize legacy Windows interfaces with smooth DirectWrite typography, Apple Glass-inspired translucency, responsive layouts, and polished micro-animations.
+| Mod | Version | Target | Overview & Source |
+| :--- | :---: | :---: | :--- |
+| **MPRD - Modern Pill Run Dialog** | `1.2.0` | `explorer.exe` (`Win + R`) | [`mods/mprd/`](./mods/mprd) |
 
-> Full mod documentation, themes, resolution guides, and shortcuts are embedded inside each `.wh.cpp` mod (`WindhawkModReadme`) and rendered directly inside the Windhawk app.
+> Click any folder inside [`mods/`](./mods) to view screenshots, full documentation, features, and `.wh.cpp` source code.
 
-## Quick Browse
-- **[Feature & Mod List](./feature/README.md)** — Short catalog of available mods and highlights.
-- **[MPRD - Modern Pill Run Dialog](./modern-pill-run-dialog.wh.cpp)** — Modern floating pill replacement for Windows `Win + R` (`v1.2.0`).
+## Repository Structure
+```text
+Windhawk-mods/
+├── README.md
+└── mods/
+    └── mprd/
+        ├── README.md
+        ├── modern-pill-run-dialog.wh.cpp
+        └── assets/
+            └── preview.png
+```
 
-## How to Install Any Mod Locally
+## Quick Install (Local Windhawk Mod)
 1. Open **Windhawk** and click **`+ Create a new mod`**.
-2. Open the desired `.wh.cpp` file from this repository and copy its full source code.
+2. Open the `.wh.cpp` file inside the mod folder you want (for example [`mods/mprd/modern-pill-run-dialog.wh.cpp`](./mods/mprd/modern-pill-run-dialog.wh.cpp)) and copy the full code.
 3. Paste into the Windhawk editor, click **`Compile Mod`**, then **`Exit Editing Mode`**.
-4. Customize themes and behavior in the mod's **Settings** tab.
+4. Open the mod's **Settings** tab to customize themes and options.
 
 ---
 
