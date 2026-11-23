@@ -183,6 +183,7 @@ using std::min;
 #include <dwmapi.h>
 #include <dwrite.h>
 #include <gdiplus.h>
+#include <propsys.h>
 #include <shellapi.h>
 #include <shlwapi.h>
 #include <shobjidl.h>
@@ -1176,7 +1177,10 @@ public:
         }
 
         HMODULE hMod = GetModModule();
-        RegisterWindowClass(hMod);
+        if (m_settings.showOnTaskbar) {
+            m_taskbarIcon = CreateTaskbarAppIcon();
+        }
+        RegisterWindowClass(hMod, m_taskbarIcon);
         ComputeMonitorAndScale();
         InitDirect2DAndFonts();
         ComputeLayoutMetrics();
@@ -1215,11 +1219,11 @@ public:
         }
 
         if (m_settings.showOnTaskbar) {
-            m_taskbarIcon = CreateTaskbarAppIcon();
             if (m_taskbarIcon) {
                 SendMessageW(m_hwnd, WM_SETICON, ICON_BIG, reinterpret_cast<LPARAM>(m_taskbarIcon));
                 SendMessageW(m_hwnd, WM_SETICON, ICON_SMALL, reinterpret_cast<LPARAM>(m_taskbarIcon));
             }
+            ApplyIndependentTaskbarAppId(true);
         }
 
         g_activeDialogHwnd.store(m_hwnd);
@@ -1414,15 +1418,64 @@ private:
         return hMod ? hMod : GetModuleHandleW(nullptr);
     }
 
-    static void RegisterWindowClass(HMODULE hMod) {
+    static void RegisterWindowClass(HMODULE hMod, HICON hIcon) {
         WNDCLASSEXW wc = {};
         wc.cbSize = sizeof(wc);
         wc.style = CS_HREDRAW | CS_VREDRAW | CS_DBLCLKS;
         wc.lpfnWndProc = StaticWndProc;
         wc.hInstance = hMod;
+        wc.hIcon = hIcon;
+        wc.hIconSm = hIcon;
         wc.hCursor = LoadCursorW(nullptr, reinterpret_cast<LPCWSTR>(IDC_ARROW));
         wc.lpszClassName = kWindowClassName;
         RegisterClassExW(&wc);
+    }
+
+    // Assigns an independent AppUserModelID so Windows 11 shows MPRD as its own taskbar icon
+    void ApplyIndependentTaskbarAppId(bool enable) {
+        if (!m_hwnd || !IsWindow(m_hwnd)) return;
+        HMODULE hShell32 = GetModuleHandleW(L"shell32.dll");
+        if (!hShell32) return;
+
+        using SHGetPropertyStoreForWindowFn = HRESULT(WINAPI*)(HWND, REFIID, void**);
+        auto fn = reinterpret_cast<SHGetPropertyStoreForWindowFn>(
+            GetProcAddress(hShell32, "SHGetPropertyStoreForWindow"));
+        if (!fn) return;
+
+        IPropertyStore* pps = nullptr;
+        if (FAILED(fn(m_hwnd, IID_IPropertyStore, reinterpret_cast<void**>(&pps))) || !pps) {
+            return;
+        }
+
+        // PKEY_AppUserModel_ID & PKEY_AppUserModel_PreventPinning
+        constexpr GUID kAppUserModelFmtId = {
+            0x9F4C2855, 0x9F79, 0x4B39, {0xA8, 0xD0, 0xE1, 0xD4, 0x2D, 0xE1, 0xD5, 0xF3}};
+        const PROPERTYKEY pkeyId = {kAppUserModelFmtId, 5};
+        const PROPERTYKEY pkeyPreventPin = {kAppUserModelFmtId, 9};
+
+        if (enable) {
+            PROPVARIANT pvId;
+            PropVariantInit(&pvId);
+            if (SUCCEEDED(SHStrDupW(L"DarkoStepBro.Windhawk.MPRD", &pvId.pwszVal))) {
+                pvId.vt = VT_LPWSTR;
+                pps->SetValue(pkeyId, pvId);
+                PropVariantClear(&pvId);
+            }
+
+            PROPVARIANT pvPin;
+            PropVariantInit(&pvPin);
+            pvPin.vt = VT_BOOL;
+            pvPin.boolVal = VARIANT_TRUE;
+            pps->SetValue(pkeyPreventPin, pvPin);
+        } else {
+            PROPVARIANT pvEmpty;
+            PropVariantInit(&pvEmpty);
+            pps->SetValue(pkeyId, pvEmpty);
+            pps->SetValue(pkeyPreventPin, pvEmpty);
+        }
+
+        pps->Commit();
+        pps->Release();
     }
 
     void RegisterTaskbarTab() {
@@ -1438,6 +1491,9 @@ private:
     }
 
     void UnregisterTaskbarTab() {
+        if (m_hwnd && m_settings.showOnTaskbar) {
+            ApplyIndependentTaskbarAppId(false);
+        }
         if (m_taskbarList) {
             if (m_hwnd) {
                 m_taskbarList->DeleteTab(m_hwnd);
@@ -3540,6 +3596,7 @@ private:
                 KillTimer(hwnd, kTimerErrorClear);
                 m_animTimerActive = false;
                 UnregisterTaskbarTab();
+                m_hwnd = nullptr;
                 PostQuitMessage(0);
                 return 0;
             }
