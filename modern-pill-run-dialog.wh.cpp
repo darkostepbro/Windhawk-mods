@@ -13,7 +13,7 @@
 /*
 # MPRD - Modern Pill Run Dialog
 
-![MPRD Preview](https://raw.githubusercontent.com/darkostepbro/Windhawk-mods/main/feature/assets/preview.png)
+![MPRD Preview](https://raw.githubusercontent.com/darkostepbro/Windhawk-mods/main/assets/preview.png)
 
 
 
@@ -23,35 +23,35 @@ clean minimal filled vector icons, live Windows `RunMRU` history, inline autocom
 quick Admin elevation, and fluid hover & launch polish animations.
 
 ## Themes
-1. **Minimal 11 (Obsidian Matte)** â€” Clean dark obsidian matte pill with subtle rim lighting and soft diffused shadow.
-2. **Translucent (Apple Glass)** â€” Seamless creamy frosted glass blur with Apple-style vibrancy and luminous specular edges.
-3. **Frosted Light (Apple Light Glass)** â€” Bright milky macOS/visionOS-inspired light frosted glass with crisp high-contrast dark typography.
-4. **Midnight Aurora (Deep Glass + Glow)** â€” Deep smoked indigo-obsidian glass with a subtle cyan-to-violet ambient rim gradient.
+1. **Minimal 11 (Obsidian Matte)** Ã¢â‚¬â€ Clean dark obsidian matte pill with subtle rim lighting and soft diffused shadow.
+2. **Translucent (Apple Glass)** Ã¢â‚¬â€ Seamless creamy frosted glass blur with Apple-style vibrancy and luminous specular edges.
+3. **Frosted Light (Apple Light Glass)** Ã¢â‚¬â€ Bright milky macOS/visionOS-inspired light frosted glass with crisp high-contrast dark typography.
+4. **Midnight Aurora (Deep Glass + Glow)** Ã¢â‚¬â€ Deep smoked indigo-obsidian glass with a subtle cyan-to-violet ambient rim gradient.
 
 ## Key Features
-- **DirectWrite Smooth Typography** â€” Razor-sharp, non-pixelated grayscale anti-aliased rendering (defaults to **Google Sans**, with graceful fallback to Segoe UI Variable / Segoe UI).
-- **Custom Favorite Font** â€” Enter any font installed on Windows directly in Mod Settings.
-- **Transparent Background (10% â€“ 100%)** â€” Smoothly tune glass/background transparency from a dropdown.
-- **Responsive Pill Window (`WIDTHxHEIGHT`)** â€” Customize width and height cleanly; icons, buttons, and typography auto-scale responsively.
-- **Show on Taskbar & Cursor Drag Toggles** â€” Optionally register MPRD on the Windows Taskbar and allow/lock cursor dragging.
-- **Authentic Bottom-Left (Classic) Position** â€” Sits snugly above the taskbar and expands suggestions upward.
-- **Polished Micro-Animations** â€” Smooth top-to-bottom open/close glide, animated hover states across all controls, gradient hover sweep on the Run button, typing glow feedback, and a bright 360Â° in-place spin on the left icon right before launching.
+- **DirectWrite Smooth Typography** Ã¢â‚¬â€ Razor-sharp, non-pixelated grayscale anti-aliased rendering (defaults to **Google Sans**, with graceful fallback to Segoe UI Variable / Segoe UI).
+- **Custom Favorite Font** Ã¢â‚¬â€ Enter any font installed on Windows directly in Mod Settings.
+- **Transparent Background (10% Ã¢â‚¬â€œ 100%)** Ã¢â‚¬â€ Smoothly tune glass/background transparency from a dropdown.
+- **Responsive Pill Window (`WIDTHxHEIGHT`)** Ã¢â‚¬â€ Customize width and height cleanly; icons, buttons, and typography auto-scale responsively.
+- **Show on Taskbar & Cursor Drag Toggles** Ã¢â‚¬â€ Optionally register MPRD on the Windows Taskbar and allow/lock cursor dragging.
+- **Authentic Bottom-Left (Classic) Position** Ã¢â‚¬â€ Sits snugly above the taskbar and expands suggestions upward.
+- **Polished Micro-Animations** Ã¢â‚¬â€ Smooth top-to-bottom open/close glide, animated hover states across all controls, gradient hover sweep on the Run button, typing glow feedback, and a bright 360Ã‚Â° in-place spin on the left icon right before launching.
 
 ## Screen Resolution Guide (`1920x1080` and Below)
 If you use a `1920x1080` display or smaller (such as `1600x900` or `1366x768`), you can adjust **Pill Window (px)** in Mod Settings to fit your screen comfortably:
 - **`1366x768` / `1280x720`:** `500x54` or `520x56`
 - **`1600x900`:** `560x58`
-- **`1920x1080` (100%â€“125% DPI):** `580x60` or `620x64` *(default)*
+- **`1920x1080` (100%Ã¢â‚¬â€œ125% DPI):** `580x60` or `620x64` *(default)*
 - **`2560x1440` / `4K`:** `640x66` or `700x68`
 
 All inner elements (icons, Run pill button, font size, and corner radius) scale responsively so nothing overlaps or stretches.
 
 ## Keyboard Shortcuts
-- `Enter` â€” Run command (plays the 360Â° left-icon polish spin when animations are enabled)
-- `Ctrl + Shift + Enter` â€” Run as Administrator
-- `Tab` or `Right Arrow` â€” Accept inline autocomplete suggestion
-- `Up` / `Down` â€” Navigate Run history & system commands
-- `Esc` â€” Close dropdown or dismiss dialog
+- `Enter` Ã¢â‚¬â€ Run command (plays the 360Ã‚Â° left-icon polish spin when animations are enabled)
+- `Ctrl + Shift + Enter` Ã¢â‚¬â€ Run as Administrator
+- `Tab` or `Right Arrow` Ã¢â‚¬â€ Accept inline autocomplete suggestion
+- `Up` / `Down` Ã¢â‚¬â€ Navigate Run history & system commands
+- `Esc` Ã¢â‚¬â€ Close dropdown or dismiss dialog
 - Click the top-left status tab or left icon badge to toggle **Admin Mode**
 
 ---
@@ -64,34 +64,34 @@ yang modern, bersih, dan responsif dengan **render teks DirectWrite anti-pecah**
 history `RunMRU` Windows, autocomplete instan, mode Admin 1-klik, dan animasi polish.
 
 ## Pilihan Tema
-1. **Minimal 11 (Obsidian Matte)** â€” Permukaan gelap obsidian matte minimalis dengan rim highlight tipis dan bayangan halus.
-2. **Translucent (Apple Glass)** â€” Efek blur frosted glass seamless bergaya Apple Glass dengan vibrancy halus dan pinggiran kaca bercahaya.
-3. **Frosted Light (Apple Light Glass)** â€” Kaca buram terang bergaya macOS/visionOS dengan teks gelap kontras tinggi.
-4. **Midnight Aurora (Deep Glass + Glow)** â€” Kaca gelap indigo-obsidian dengan aksen gradasi rim tipis cyan ke violet.
+1. **Minimal 11 (Obsidian Matte)** Ã¢â‚¬â€ Permukaan gelap obsidian matte minimalis dengan rim highlight tipis dan bayangan halus.
+2. **Translucent (Apple Glass)** Ã¢â‚¬â€ Efek blur frosted glass seamless bergaya Apple Glass dengan vibrancy halus dan pinggiran kaca bercahaya.
+3. **Frosted Light (Apple Light Glass)** Ã¢â‚¬â€ Kaca buram terang bergaya macOS/visionOS dengan teks gelap kontras tinggi.
+4. **Midnight Aurora (Deep Glass + Glow)** Ã¢â‚¬â€ Kaca gelap indigo-obsidian dengan aksen gradasi rim tipis cyan ke violet.
 
 ## Fitur Utama
-- **Teks Mulus DirectWrite** â€” Bebas piksel/pecah dengan default font **Google Sans** (otomatis fallback ke Segoe UI Variable / Segoe UI jika belum terinstall).
-- **Custom with your Favorite Font** â€” Bebas ganti ke font favorit yang terinstall di PC kamu.
-- **Transparent Background (10% â€“ 100%)** â€” Atur tingkat transparansi background langsung dari dropdown.
-- **Pill Window (px) Responsif (`LEBARxTINGGI`)** â€” Custom lebar dan tinggi pill secara responsif tanpa tampilan melenceng atau tumpang tindih.
-- **Show Run Dialog on Taskbar & Move with Cursor** â€” Opsi menampilkan MPRD di Taskbar Windows dan opsi drag/kunci posisi dengan kursor.
-- **Animasi Polish Lengkap** â€” Animasi buka/tutup dari atas ke bawah, hover animasi halus di setiap tombol & baris dropdown, gradasi hover di tombol Run, efek ketik, dan putaran 360Â° bercahaya pada icon kiri sebelum menjalankan perintah.
+- **Teks Mulus DirectWrite** Ã¢â‚¬â€ Bebas piksel/pecah dengan default font **Google Sans** (otomatis fallback ke Segoe UI Variable / Segoe UI jika belum terinstall).
+- **Custom with your Favorite Font** Ã¢â‚¬â€ Bebas ganti ke font favorit yang terinstall di PC kamu.
+- **Transparent Background (10% Ã¢â‚¬â€œ 100%)** Ã¢â‚¬â€ Atur tingkat transparansi background langsung dari dropdown.
+- **Pill Window (px) Responsif (`LEBARxTINGGI`)** Ã¢â‚¬â€ Custom lebar dan tinggi pill secara responsif tanpa tampilan melenceng atau tumpang tindih.
+- **Show Run Dialog on Taskbar & Move with Cursor** Ã¢â‚¬â€ Opsi menampilkan MPRD di Taskbar Windows dan opsi drag/kunci posisi dengan kursor.
+- **Animasi Polish Lengkap** Ã¢â‚¬â€ Animasi buka/tutup dari atas ke bawah, hover animasi halus di setiap tombol & baris dropdown, gradasi hover di tombol Run, efek ketik, dan putaran 360Ã‚Â° bercahaya pada icon kiri sebelum menjalankan perintah.
 
 ## Panduan Ukuran untuk Layar Resolusi `1920x1080` ke Bawah
 Untuk pengguna layar **`1920x1080` ke bawah**, silakan ubah pengaturan **Pill Window (px)** di tab **Settings** agar proporsional di layar masing-masing:
 - **Layar `1366x768` / `1280x720`:** gunakan `500x54` atau `520x56`
 - **Layar `1600x900`:** gunakan `560x58`
-- **Layar `1920x1080` (skala 100%â€“125%):** gunakan `580x60` atau `620x64` *(default)*
+- **Layar `1920x1080` (skala 100%Ã¢â‚¬â€œ125%):** gunakan `580x60` atau `620x64` *(default)*
 - **Layar `2560x1440` / `4K`:** gunakan `640x66` atau `700x68`
 
 Seluruh komponen di dalam pill (icon, tombol Run, ukuran teks, dan kelengkungan sudut) otomatis menyesuaikan secara responsif.
 
 ## Pintasan Keyboard
-- `Enter` â€” Jalankan perintah
-- `Ctrl + Shift + Enter` â€” Jalankan sebagai Administrator
-- `Tab` / `Panah Kanan` â€” Terima saran autocomplete
-- `Panah Atas` / `Bawah` â€” Navigasi riwayat Run & perintah sistem
-- `Esc` â€” Tutup dropdown atau keluar dari Run dialog
+- `Enter` Ã¢â‚¬â€ Jalankan perintah
+- `Ctrl + Shift + Enter` Ã¢â‚¬â€ Jalankan sebagai Administrator
+- `Tab` / `Panah Kanan` Ã¢â‚¬â€ Terima saran autocomplete
+- `Panah Atas` / `Bawah` Ã¢â‚¬â€ Navigasi riwayat Run & perintah sistem
+- `Esc` Ã¢â‚¬â€ Tutup dropdown atau keluar dari Run dialog
 - Klik tab status kiri atas atau icon badge kiri untuk mengaktifkan/menonaktifkan **Admin Mode**
 
 ---
@@ -155,7 +155,7 @@ Created & maintained by **[darkostepbro](https://github.com/darkostepbro)** (`gi
   $description: "Automatically dismisses MPRD when it loses focus."
 - enableAnimation: true
   $name: "Smooth Entrance Animation"
-  $description: "Enables polished open/close glides, smooth hover transitions, typing glow, and the luminous 360Â° icon spin before launching."
+  $description: "Enables polished open/close glides, smooth hover transitions, typing glow, and the luminous 360Ã‚Â° icon spin before launching."
 */
 // ==/WindhawkModSettings==
 
@@ -1935,7 +1935,7 @@ private:
             return;
         }
 
-        // Play bright luminous glow + smooth 360Â° in-place spin before launching
+        // Play bright luminous glow + smooth 360Ã‚Â° in-place spin before launching
         m_execProgress = 0.0f;
         m_animState = AnimState::Executing;
         m_animStartTick = GetTickCount64();
@@ -2241,7 +2241,7 @@ private:
         FillSurfaceWithTheme(g, pillPath, m_pillRect, false, 1.0f, blurredBmp.get());
 
         // --------------------------------------------------------------------
-        // 4. Left Icon Badge + 4 Corner Brackets + Hover & 360Â° Spin Polish
+        // 4. Left Icon Badge + 4 Corner Brackets + Hover & 360Ã‚Â° Spin Polish
         // --------------------------------------------------------------------
         {
             float cx = m_badgeRect.X + m_badgeRect.Width * 0.5f;
@@ -2301,7 +2301,7 @@ private:
             badgeFill.SetWrapMode(Gdiplus::WrapModeTileFlipXY);
             g.FillPath(&badgeFill, &badgePath);
 
-            // Smooth 360Â° in-place rotation during Executing polish state
+            // Smooth 360Ã‚Â° in-place rotation during Executing polish state
             Gdiplus::GraphicsState iconState = g.Save();
             if (isExec) {
                 float angleDeg = execEase * 360.0f;
@@ -2776,7 +2776,7 @@ private:
 
     LRESULT HandleMessage(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
         switch (msg) {
-            // Single-shot command launcher (decoupled from WM_TIMER â€” zero spam possible!)
+            // Single-shot command launcher (decoupled from WM_TIMER Ã¢â‚¬â€ zero spam possible!)
             case kMsgExecuteNow: {
                 if (m_animState != AnimState::LaunchPending) {
                     return 0;
