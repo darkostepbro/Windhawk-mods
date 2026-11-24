@@ -1,15 +1,33 @@
 # MPRD - Modern Pill Run Dialog
 
-![MPRD Preview](assets/preview.png)
-
 Replaces the legacy Windows Run dialog (`Win + R`) with a sleek, floating pill command bar built with **DirectWrite anti-aliased typography**, **live Acrylic backdrop blur**, clean vector icons, live Windows `RunMRU` history, inline autocomplete, quick Admin elevation, custom rounded corners, and fluid hover & launch polish animations.
 
-## Themes
-1. **MPRD Blur** — Seamless dark Acrylic frosted blur with balanced luminosity, soft tint, and subtle micro-grain.
-2. **MPRD Legacy** — Classic obsidian matte floating pill with crisp rim lighting and soft diffused shadow.
-3. **M-11 Compact** — Ultra-minimalist single expandable dark command bar with outline icons (`🔍`, folder, `( > )`) and inline unified suggestions list.
-4. **Liquid Glass** — Translucent convex liquid glass capsule with bright crystalline top/bottom rim reflections, soft bottom internal glow, and a circular right-arrow (`→`) icon-only action button.
-5. **Midnight Aurora** — Deep smoked indigo-obsidian frosted glass with a subtle cyan-to-violet ambient rim gradient.
+## Themes & Preview
+
+### 1. MPRD Blur
+Seamless dark Acrylic frosted blur with balanced luminosity, soft tint, and subtle micro-grain.
+
+![MPRD Blur](assets/mprd-blur.png)
+
+### 2. MPRD Legacy
+Classic obsidian matte floating pill with crisp rim lighting and soft diffused shadow.
+
+![MPRD Legacy](assets/mprd-legacy.png)
+
+### 3. M-11 Compact
+Ultra-minimalist single expandable dark command bar with outline icons (`🔍`, folder, `( > )`) and inline unified suggestions list.
+
+![M-11 Compact](assets/m-11.png)
+
+### 4. Liquid Glass
+Translucent convex liquid glass capsule with bright crystalline top/bottom rim reflections, soft bottom internal glow, and a circular right-arrow (`→`) icon-only action button.
+
+![Liquid Glass](assets/liquid-glass.png)
+
+### 5. Midnight Aurora
+Deep smoked indigo-obsidian frosted glass with a subtle cyan-to-violet ambient rim gradient.
+
+![Midnight Aurora](assets/aurora-midnight.png)
 
 ## Key Features
 - **DirectWrite Smooth Typography** — Crisp grayscale anti-aliased rendering (defaults to **Google Sans**, with graceful fallback to Segoe UI Variable / Segoe UI).
