@@ -23,51 +23,51 @@ quick Admin elevation, custom rounded corners, and fluid hover & launch polish a
 ### 1. MPRD Blur
 Seamless dark Acrylic frosted blur with balanced luminosity, soft tint, and subtle micro-grain.
 
-![MPRD Blur](https://raw.githubusercontent.com/darkostepbro/Windhawk-mods/main/mprd/assets/mprd-blur.png)
+![MPRD Blur](https://raw.githubusercontent.com/darkostepbro/Windhawk-mods/main/MPRD/assets/mprd-blur.png)
 
 ### 2. MPRD Legacy
 Classic obsidian matte floating pill with crisp rim lighting and soft diffused shadow.
 
-![MPRD Legacy](https://raw.githubusercontent.com/darkostepbro/Windhawk-mods/main/mprd/assets/mprd-legacy.png)
+![MPRD Legacy](https://raw.githubusercontent.com/darkostepbro/Windhawk-mods/main/MPRD/assets/mprd-legacy.png)
 
 ### 3. M-11 Compact
-Ultra-minimalist single expandable dark command bar with outline icons (`🔍`, folder, `( > )`) and inline unified suggestions list.
+Ultra-minimalist single expandable dark command bar with outline icons (`ðŸ”`, folder, `( > )`) and inline unified suggestions list.
 
-![M-11 Compact](https://raw.githubusercontent.com/darkostepbro/Windhawk-mods/main/mprd/assets/m-11.png)
+![M-11 Compact](https://raw.githubusercontent.com/darkostepbro/Windhawk-mods/main/MPRD/assets/m-11.png)
 
 ### 4. Liquid Glass
-Translucent convex liquid glass capsule with bright crystalline top/bottom rim reflections, soft bottom internal glow, and a circular right-arrow (`→`) icon-only action button.
+Translucent convex liquid glass capsule with bright crystalline top/bottom rim reflections, soft bottom internal glow, and a circular right-arrow (`â†’`) icon-only action button.
 
-![Liquid Glass](https://raw.githubusercontent.com/darkostepbro/Windhawk-mods/main/mprd/assets/liquid-glass.png)
+![Liquid Glass](https://raw.githubusercontent.com/darkostepbro/Windhawk-mods/main/MPRD/assets/liquid-glass.png)
 
 ### 5. Midnight Aurora
 Deep smoked indigo-obsidian frosted glass with a subtle cyan-to-violet ambient rim gradient.
 
-![Midnight Aurora](https://raw.githubusercontent.com/darkostepbro/Windhawk-mods/main/mprd/assets/aurora-midnight.png)
+![Midnight Aurora](https://raw.githubusercontent.com/darkostepbro/Windhawk-mods/main/MPRD/assets/aurora-midnight.png)
 
 ## Key Features
-- **DirectWrite Smooth Typography** — Crisp grayscale anti-aliased rendering (defaults to **Google Sans**, with graceful fallback to Segoe UI Variable / Segoe UI).
-- **Custom with your Favorite Font** — Enter any installed Windows font family name in Mod Settings.
-- **Transparent Background (`10% – 100%`)** — Fine-tune background/glass transparency from a dropdown.
-- **Rounded Window (`10% – 50%`)** — Custom border radius applied cleanly to the entire Run dialog window (minimum `10%`, never `0`).
-- **Responsive Pill Window (`WIDTHxHEIGHT`)** — Customize width and height cleanly; icons, buttons, and typography auto-scale responsively.
-- **Show Run Dialog on Taskbar & Move with Cursor** — Toggle Windows Taskbar presence and cursor dragging.
-- **Authentic Bottom-Left (Classic) Position** — Sits snugly above the taskbar and unfolds suggestions upward.
-- **Polished Micro-Animations** — Smooth top-to-bottom open/close glides, smooth hover transitions across all controls, gradient hover sweep on the Run button, typing glow feedback, and a luminous 360° in-place icon spin right before launching.
+- **DirectWrite Smooth Typography** â€” Crisp grayscale anti-aliased rendering (defaults to **Google Sans**, with graceful fallback to Segoe UI Variable / Segoe UI).
+- **Custom with your Favorite Font** â€” Enter any installed Windows font family name in Mod Settings.
+- **Transparent Background (`10% â€“ 100%`)** â€” Fine-tune background/glass transparency from a dropdown.
+- **Rounded Window (`10% â€“ 50%`)** â€” Custom border radius applied cleanly to the entire Run dialog window (minimum `10%`, never `0`).
+- **Responsive Pill Window (`WIDTHxHEIGHT`)** â€” Customize width and height cleanly; icons, buttons, and typography auto-scale responsively.
+- **Show Run Dialog on Taskbar & Move with Cursor** â€” Toggle Windows Taskbar presence and cursor dragging.
+- **Authentic Bottom-Left (Classic) Position** â€” Sits snugly above the taskbar and unfolds suggestions upward.
+- **Polished Micro-Animations** â€” Smooth top-to-bottom open/close glides, smooth hover transitions across all controls, gradient hover sweep on the Run button, typing glow feedback, and a luminous 360Â° in-place icon spin right before launching.
 
 ## Screen Resolution Guide (`1920x1080` and Below)
 If you use a `1920x1080` display or smaller, adjust **Pill Window (px)** in Mod Settings to fit your screen comfortably:
 - **`1280x720` / `1366x768`:** `500x54` or `520x56`
 - **`1600x900`:** `560x58`
-- **`1920x1080` (100%–125% DPI):** `580x60` or `520x64` *(default)*
+- **`1920x1080` (100%â€“125% DPI):** `580x60` or `520x64` *(default)*
 - **`2560x1440` / `4K`:** `640x66` or `700x68`
 
 ## Keyboard Shortcuts
-- `Enter` — Run command
-- `Ctrl + Shift + Enter` — Run as Administrator
-- `Tab` or `Right Arrow` — Accept inline autocomplete suggestion
-- `Up` / `Down` — Navigate Run history & system commands
-- `Esc` — Close dropdown or dismiss dialog
+- `Enter` â€” Run command
+- `Ctrl + Shift + Enter` â€” Run as Administrator
+- `Tab` or `Right Arrow` â€” Accept inline autocomplete suggestion
+- `Up` / `Down` â€” Navigate Run history & system commands
+- `Esc` â€” Close dropdown or dismiss dialog
 - Click the top-left status tab or left icon to toggle **Admin Mode**
 
 ---
@@ -81,34 +81,34 @@ sinkronisasi riwayat `RunMRU` Windows, autocomplete instan, mode Admin 1-klik,
 custom rounded window, dan animasi polish yang halus.
 
 ## Pilihan Tema
-1. **MPRD Blur** — Efek blur Acrylic gelap seamless dengan luminosity seimbang, tint halus, dan micro-grain tipis.
-2. **MPRD Legacy** — Permukaan gelap obsidian matte klasik dengan rim highlight tipis dan bayangan lembut.
-3. **M-11 Compact** — UI super minimalis dengan satu window menyatu, icon outline bersih (`🔍`, folder, `( > )`), dan daftar saran terintegrasi di dalam kotak yang sama.
-4. **Liquid Glass** — Kapsul liquid glass transparan dengan pantulan rim kaca putih kristal terang di atas/bawah, pendar cahaya lembut di tepi bawah, dan tombol lingkaran icon panah kanan (`→`) tanpa label teks.
-5. **Midnight Aurora** — Kaca gelap indigo-obsidian dengan aksen gradasi rim tipis cyan ke violet.
+1. **MPRD Blur** â€” Efek blur Acrylic gelap seamless dengan luminosity seimbang, tint halus, dan micro-grain tipis.
+2. **MPRD Legacy** â€” Permukaan gelap obsidian matte klasik dengan rim highlight tipis dan bayangan lembut.
+3. **M-11 Compact** â€” UI super minimalis dengan satu window menyatu, icon outline bersih (`ðŸ”`, folder, `( > )`), dan daftar saran terintegrasi di dalam kotak yang sama.
+4. **Liquid Glass** â€” Kapsul liquid glass transparan dengan pantulan rim kaca putih kristal terang di atas/bawah, pendar cahaya lembut di tepi bawah, dan tombol lingkaran icon panah kanan (`â†’`) tanpa label teks.
+5. **Midnight Aurora** â€” Kaca gelap indigo-obsidian dengan aksen gradasi rim tipis cyan ke violet.
 
 ## Fitur Utama
-- **Teks Mulus DirectWrite** — Bebas piksel/pecah dengan default font **Google Sans** (otomatis fallback ke Segoe UI Variable / Segoe UI jika belum terinstall).
-- **Custom with your Favorite Font** — Ganti ke font favorit yang terinstall di PC kamu.
-- **Transparent Background (`10% – 100%`)** — Atur tingkat transparansi kaca/background langsung dari dropdown.
-- **Rounded Window (`10% – 50%`)** — Custom border radius untuk keseluruhan window Run dialog (minimal `10%`, tidak bisa `0`).
-- **Pill Window (px) Responsif (`LEBARxTINGGI`)** — Custom lebar & tinggi pill secara responsif tanpa tampilan melenceng.
-- **Show Run Dialog on Taskbar & Move with Cursor** — Opsi menampilkan MPRD di Taskbar Windows dan opsi drag/kunci posisi dengan kursor.
-- **Animasi Polish Lengkap** — Animasi buka/tutup dari atas ke bawah, animasi hover halus di seluruh kontrol, gradasi hover di tombol Run, efek ketik, dan putaran 360° bercahaya pada icon kiri sebelum membuka aplikasi.
+- **Teks Mulus DirectWrite** â€” Bebas piksel/pecah dengan default font **Google Sans** (otomatis fallback ke Segoe UI Variable / Segoe UI jika belum terinstall).
+- **Custom with your Favorite Font** â€” Ganti ke font favorit yang terinstall di PC kamu.
+- **Transparent Background (`10% â€“ 100%`)** â€” Atur tingkat transparansi kaca/background langsung dari dropdown.
+- **Rounded Window (`10% â€“ 50%`)** â€” Custom border radius untuk keseluruhan window Run dialog (minimal `10%`, tidak bisa `0`).
+- **Pill Window (px) Responsif (`LEBARxTINGGI`)** â€” Custom lebar & tinggi pill secara responsif tanpa tampilan melenceng.
+- **Show Run Dialog on Taskbar & Move with Cursor** â€” Opsi menampilkan MPRD di Taskbar Windows dan opsi drag/kunci posisi dengan kursor.
+- **Animasi Polish Lengkap** â€” Animasi buka/tutup dari atas ke bawah, animasi hover halus di seluruh kontrol, gradasi hover di tombol Run, efek ketik, dan putaran 360Â° bercahaya pada icon kiri sebelum membuka aplikasi.
 
 ## Panduan Ukuran untuk Layar Resolusi `1920x1080` ke Bawah
 Untuk pengguna layar resolusi **`1920x1080` ke bawah**, silakan ubah pengaturan **Pill Window (px)** di tab **Settings** agar proporsional di layar masing-masing:
 - **Layar `1280x720` / `1366x768`:** gunakan `500x54` atau `520x56`
 - **Layar `1600x900`:** gunakan `560x58`
-- **Layar `1920x1080` (skala 100%–125%):** gunakan `580x60` atau `520x64` *(default)*
+- **Layar `1920x1080` (skala 100%â€“125%):** gunakan `580x60` atau `520x64` *(default)*
 - **Layar `2560x1440` / `4K`:** gunakan `640x66` atau `700x68`
 
 ## Pintasan Keyboard
-- `Enter` — Jalankan perintah
-- `Ctrl + Shift + Enter` — Jalankan sebagai Administrator
-- `Tab` / `Panah Kanan` — Terima saran autocomplete
-- `Panah Atas` / `Bawah` — Navigasi riwayat Run & perintah sistem
-- `Esc` — Tutup dropdown atau keluar dari Run dialog
+- `Enter` â€” Jalankan perintah
+- `Ctrl + Shift + Enter` â€” Jalankan sebagai Administrator
+- `Tab` / `Panah Kanan` â€” Terima saran autocomplete
+- `Panah Atas` / `Bawah` â€” Navigasi riwayat Run & perintah sistem
+- `Esc` â€” Tutup dropdown atau keluar dari Run dialog
 - Klik tab status kiri atas atau icon kiri untuk mengaktifkan/menonaktifkan **Admin Mode**
 
 ---
@@ -176,7 +176,7 @@ Created & maintained by **[darkostepbro](https://github.com/darkostepbro)** (`gi
   $description: "Automatically dismisses MPRD when it loses focus."
 - enableAnimation: true
   $name: "Smooth Entrance Animation"
-  $description: "Enables polished open/close glides, smooth hover transitions, typing glow, and the luminous 360° icon spin before launching."
+  $description: "Enables polished open/close glides, smooth hover transitions, typing glow, and the luminous 360Â° icon spin before launching."
 */
 // ==/WindhawkModSettings==
 
