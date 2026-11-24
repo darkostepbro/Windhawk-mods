@@ -59,7 +59,7 @@ Deep smoked indigo-obsidian frosted glass with a subtle cyan-to-violet ambient r
 If you use a `1920x1080` display or smaller, adjust **Pill Window (px)** in Mod Settings to fit your screen comfortably:
 - **`1280x720` / `1366x768`:** `500x54` or `520x56`
 - **`1600x900`:** `560x58`
-- **`1920x1080` (100%–125% DPI):** `580x60` or `620x64` *(default)*
+- **`1920x1080` (100%–125% DPI):** `580x60` or `520x64` *(default)*
 - **`2560x1440` / `4K`:** `640x66` or `700x68`
 
 ## Keyboard Shortcuts
@@ -100,7 +100,7 @@ custom rounded window, dan animasi polish yang halus.
 Untuk pengguna layar resolusi **`1920x1080` ke bawah**, silakan ubah pengaturan **Pill Window (px)** di tab **Settings** agar proporsional di layar masing-masing:
 - **Layar `1280x720` / `1366x768`:** gunakan `500x54` atau `520x56`
 - **Layar `1600x900`:** gunakan `560x58`
-- **Layar `1920x1080` (skala 100%–125%):** gunakan `580x60` atau `620x64` *(default)*
+- **Layar `1920x1080` (skala 100%–125%):** gunakan `580x60` atau `520x64` *(default)*
 - **Layar `2560x1440` / `4K`:** gunakan `640x66` atau `700x68`
 
 ## Pintasan Keyboard
@@ -153,9 +153,9 @@ Created & maintained by **[darkostepbro](https://github.com/darkostepbro)** (`gi
     - "centerTop": "Center Top (Command Bar)"
     - "center": "Screen Center"
     - "bottomLeft": "Bottom Left (Classic)"
-- pillWindow: "620x64"
+- pillWindow: "520x64"
   $name: "Pill Window (px)"
-  $description: "Responsive pill size in WIDTHxHEIGHT px (e.g. 620x64, 580x60 for 1080p, 520x56 for 768p). Width: 420-920, Height: 48-88."
+  $description: "Responsive pill size in WIDTHxHEIGHT px (e.g. 520x64, 580x60 for 1080p, 520x56 for 768p). Width: 420-920, Height: 48-88."
 - customFont: "Google Sans"
   $name: "Custom with your Favorite Font"
   $description: "Write any installed font family name (default: Google Sans). Falls back to Segoe UI Variable / Segoe UI if unavailable."
@@ -228,7 +228,7 @@ struct ModSettings {
     int transparentBackground = 50;
     int roundedWindow = 34;
     DialogPosition position = DialogPosition::CenterTop;
-    int pillWidth = 620;
+    int pillWidth = 520;
     int pillHeight = 64;
     std::wstring customFont = L"Google Sans";
     bool showOnTaskbar = false;
@@ -252,7 +252,7 @@ std::wstring TrimW(const std::wstring& str) {
 }
 
 void ParsePillWindowSize(const std::wstring& raw, int& outW, int& outH) {
-    outW = 620;
+    outW = 520;
     outH = 64;
 
     std::wstring s = TrimW(raw);
@@ -278,7 +278,7 @@ void ParsePillWindowSize(const std::wstring& raw, int& outW, int& outH) {
         outH = nums[1];
     } else if (nums.size() == 1) {
         outW = nums[0];
-        outH = static_cast<int>(std::round(outW * (64.0f / 620.0f)));
+        outH = static_cast<int>(std::round(outW * (64.0f / 520.0f)));
     }
 
     if (outW < 420) outW = 420;
@@ -1345,7 +1345,7 @@ private:
     float m_padBottom = 26.0f;
     float m_tabH = 26.0f;
     float m_pillH = 64.0f;
-    float m_pillW = 620.0f;
+    float m_pillW = 520.0f;
     float m_dropGap = 8.0f;
     float m_dropRowH = 38.0f;
     float m_dropPadY = 8.0f;

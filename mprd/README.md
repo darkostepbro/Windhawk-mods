@@ -46,7 +46,7 @@ For **`1920x1080`** displays or smaller, adjust **`Pill Window (px)`** in Windha
 | :--- | :--- |
 | `1280x720` / `1366x768` | `500x54` or `520x56` |
 | `1600x900` | `560x58` |
-| `1920x1080` (100%–125% DPI) | `580x60` or `620x64` *(default)* |
+| `1920x1080` (100%–125% DPI) | `580x60` or `520x64` *(default)* |
 | `2560x1440` / `4K` | `640x66` or `700x68` |
 
 ## Keyboard Shortcuts
@@ -86,7 +86,7 @@ Untuk pengguna layar resolusi **`1920x1080` ke bawah**, silakan ubah pengaturan 
 | :--- | :--- |
 | `1280x720` / `1366x768` | `500x54` atau `520x56` |
 | `1600x900` | `560x58` |
-| `1920x1080` (100%–125% DPI) | `580x60` atau `620x64` *(default)* |
+| `1920x1080` (100%–125% DPI) | `580x60` atau `520x64` *(default)* |
 | `2560x1440` / `4K` | `640x66` atau `700x68` |
 
 ## Pintasan Keyboard
